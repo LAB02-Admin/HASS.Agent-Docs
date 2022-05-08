@@ -1,16 +1,14 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
+project = 'HASS.Agent'
+copyright = '2022, LAB02 Research'
+author = 'LAB02 Research'
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
-
-release = '0.1'
-version = '0.1.0'
+release = '1'
+version = '1'
 
 # -- General configuration
-
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -28,7 +26,6 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-
 html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
