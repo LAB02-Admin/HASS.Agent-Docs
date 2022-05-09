@@ -3,12 +3,23 @@
 <a href="https://github.com/LAB02-Research/HASS.Agent/">
     <img src="https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/logo_128.png" alt="HASS.Agent logo" title="HASS.Agent" align="right" height="128" /></a>
 
-HASS.Agent is a Windows-based client for Home Assistant. Provides notifications, quick actions, commands, sensors and more.
+HASS.Agent is a Windows-based client for [Home Assistant](https://www.home-assistant.io), developed in .NET 6. It provides notifications, quick actions, commands, sensors and more.
+
+Click [here](https://github.com/LAB02-Research/HASS.Agent/releases/latest/download/HASS.Agent.Installer.exe) to download the latest installer.
 
 Please consult the various topics on the left for more information.
 
 Need additional help? Visit the [dedicated HA forum thread](https://community.home-assistant.io/t/hass-agent-a-new-windows-based-client-to-receive-notifications-perform-quick-actions-and-much-more/369094) or [join on Discord](https://discord.gg/nMvqzwrVBU).
 
----
+----
 
-Have anything to add? Feel free to create pull requests for the [documentation repo](https://github.com/LAB02-Admin/HASS.Agent-Docs), or just mail (lab02research@outlook.com) us. Thanks!
+Have anything to add? Feel free to create pull requests for the [documentation repo](https://github.com/LAB02-Admin/HASS.Agent-Docs), or just send a mail to lab02research@outlook.com. Thanks!
+
+----
+
+HASS.Agent is **completely free**, and will always stay that way without restrictions. 
+
+However, developing and maintaining this tool (and everything that surrounds it, like these docs) takes up a lot of time. Like most developers, I run on caffeïne - so a cup of coffee is always very much appreciated! 
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/lab02research)
+
