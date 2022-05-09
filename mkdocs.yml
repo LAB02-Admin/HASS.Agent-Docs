@@ -4,3 +4,6 @@ site_author: LAB02-Research
 
 theme:
     name: readthedocs
+
+nav:
+    - Home: index.md
