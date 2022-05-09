@@ -1,1 +1,6 @@
 site_name: HASS.Agent
+site_description: Documentation for the HASS.Agent project, a Windows-based client for Home Assistant. Provides notifications, quick actions, commands, sensors and more.
+site_author: LAB02-Research
+
+theme:
+    name: readthedocs
