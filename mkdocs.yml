@@ -8,5 +8,5 @@ theme:
 nav:
     - Home: index.md
     - 'Notifications': 
-      - 'notification-debugging-client-side.md'
-      - 'notification-debugging-ha-side.md'
+      - 'notifications/notification-debugging-client-side.md'
+      - 'notifications/notification-debugging-ha-side.md'
