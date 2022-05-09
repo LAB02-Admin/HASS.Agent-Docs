@@ -7,6 +7,20 @@ theme:
 
 nav:
     - Home: index.md
+    - 'installation.md'
+    - 'configuration.md'
+    - 'installation-and-configuration-summary.md'
+    - 'updating.md'
+    - 'usage.md'
+    - 'performance-counter-debugging.md'
+    - 'sensor-command-automation-and-script-examples.md'
+    - 'translating.md'
+    - 'Commands':
+      - 'commands/actions-usage-and-examples.md'
+    - 'Media Player':
+      - 'mediaplayer/mediaplayer-usage-and-examples.md'
     - 'Notifications': 
+	  - 'notifications/notification-usage-and-examples.md'
       - 'notifications/notification-debugging-client-side.md'
       - 'notifications/notification-debugging-ha-side.md'
+      - 'notifications/notification-debugging-ssl.md'
