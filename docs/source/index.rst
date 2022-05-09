@@ -17,4 +17,4 @@ Contents
 
    usage
    api
-   notifications\debugging - client side
+   notifications/debugging - client side
