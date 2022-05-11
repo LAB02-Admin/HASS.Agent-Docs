@@ -126,8 +126,8 @@ If you're into yaml, you can also easily trigger your command from there. Here's
     to: "on"
   action:
     - service: button.press
-      data:
-        entity: button.test_vm_lock
+      target:
+        entity_id: button.test_vm_lock
     - delay:
         seconds: 2
     - service: input_boolean.turn_off
@@ -139,8 +139,8 @@ The trigger is when an input_boolean gets enabled. This is pretty useless, but i
 
 ```yaml
     - service: button.press
-      data:
-        entity: button.test_vm_lock
+      target:
+        entity_id: button.test_vm_lock
 ```
 
 The service is what you want HA to do: press our button. The entity specifies which button: our `test_vm_lock` one.
