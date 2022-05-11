@@ -150,5 +150,5 @@ If you configured your command to be something else than a button, you need to s
 ```yaml
     - service: switch.turn_on
       data:
-        entity_id: switch.test_vm_lock_switch
+        entity_id: switch.test_vm_lock
 ```
