@@ -28,8 +28,7 @@ First, open HASS.Agent's main window, and click the `commands` button:
 
 ![image](https://user-images.githubusercontent.com/81011038/167809618-5c160b82-67f6-433a-82a3-4374b7c78292.png)
 
-    Don't be alarmed if the **system status** for `commands` says `stopped`: 
-    that's just because you probably don't have any commands configured yet.
+> Note: Don't be alarmed if the **system status** for `commands` says `stopped`: that's just because you probably don't have any commands configured yet.
 
 You'll be shown a (possibly empty) command list:
 
@@ -75,7 +74,7 @@ Go to your HA instance, and press `c`. This will show the search bar. Now type `
 ![image](https://user-images.githubusercontent.com/81011038/167813646-22cd747f-9094-42d4-b48b-2b17766d582f.png)
 
     Tip: you can always find (and change) the name of your HASS.Agent instance by clicking
-    on the `configuration` button in the main window.
+    on the Configuration button in the main window.
 
 If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's an HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
 
