@@ -82,3 +82,65 @@ Click on your pc to see what commands and sensors are configured. It should at l
 
 > Note: if you can't find your device, or can't find your command, something's off in your HASS.Agent configuration. Feel free to post your problem on [the HA forums](https://community.home-assistant.io/t/hass-agent-windows-client-to-receive-notifications-use-commands-sensors-quick-actions-and-more/369094). The more info you can provide, the better, but if you don't know how don't worry - we'll help.
 
+Let's go nuts and just click it to see if it works. Did your pc get locked? Great success! If it didn't, please refer to the note above.
+
+### Implementation
+
+Alright, so now you have a working button. There are roughly two ways you can use it: add it to your dashboard, so you can manually click it, or add it to an automation or script so HA will trigger it for you.
+
+Adding it to your dashboard is easy. Just click on the `ADD TO DASHBOARD` text:
+
+![image](https://user-images.githubusercontent.com/81011038/167818902-c44b28f9-3cdb-4c8e-8cfe-a4fabe389249.png)
+
+You can now choose which dashboard. When you click `NEXT`, HA will suggest a card for you. You can either pick a different one, or click `ADD TO DASHBOARD` to add it.
+
+When you go to your dashboard, it should now show your button:
+
+![image](https://user-images.githubusercontent.com/81011038/167819093-7e2b6b50-f513-4417-a279-2235ea4709ef.png)
+
+Go ahead and click it, to make sure it works :)
+
+Let's now add it to an automation. Go back to your device's page, and on the right, click on the `+` sign next to `Automations`:
+
+![image](https://user-images.githubusercontent.com/81011038/167819333-5949f043-511c-4911-a8e7-070989ed0704.png)
+
+You can choose what type of automation you want. Let's pick `When something is triggered...`, click the button below it.
+
+When you scroll down, in the `Actions` section, you'll see your button added:
+
+![image](https://user-images.githubusercontent.com/81011038/167819977-08007f86-40b2-46e8-b909-cb804b04808c.png)
+
+Configurating automations is beyond the scope of this manual, and there are lots of good tutorials online. Just remember that you can use this action to trigger your command!
+
+### YAML
+
+If you're into yaml, you can also easily trigger your command from there. Here's an easy example automation:
+
+```yaml
+- alias: tests - trigger hassagent lock pc
+  initial_state: true
+  mode: single
+  trigger:
+    platform: state
+    entity_id: input_boolean.test_vm_lock_pc
+    to: "on"
+  action:
+    - service: button.press
+      data:
+        entity: button.test_vm_lock
+    - delay:
+        seconds: 2
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.test_vm_lock_pc
+```
+
+The trigger is when an input_boolean gets enabled. This is pretty useless, but it allows for easy testing. When the input_boolean triggers (its state changes to `on`), HA will trigger our button:
+
+```yaml
+    - service: button.press
+      data:
+        entity: button.test_vm_lock
+```
+
+The service is what you want HA to do: press our button. The entity specifies which button: our `test_vm_lock` one.
