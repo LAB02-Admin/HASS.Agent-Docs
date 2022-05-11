@@ -147,3 +147,11 @@ The trigger is when an input_boolean gets enabled. This is pretty useless, but i
 ```
 
 The service is what you want HA to do: press our button. The entity specifies which button: our `test_vm_lock` one.
+
+If you configured your command to be something else than a button, you need to set the service accordingly. If for instance you made it a button, you'd trigger it like this:
+
+```yaml
+    - service: switch.turn_on
+      data:
+        entity_id: switch.test_vm_lock-switch
+```
