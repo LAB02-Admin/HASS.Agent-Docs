@@ -38,7 +38,7 @@ Then work down the list correcting the entries.
 
 ---
 
-When you're done for the day, please let us know you worked on the translations by sending a notification:
+When you're done, please let us know you worked on the translations by sending a notification:
 
 ![image](https://user-images.githubusercontent.com/81011038/161297810-25722d35-54d2-4179-8d44-8dd7b9c6fe70.png)
 
