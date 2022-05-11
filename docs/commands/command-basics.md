@@ -8,7 +8,7 @@ You can use Home Assistant's [glossary](https://www.home-assistant.io/docs/gloss
 
 From within HASS.Agent you can create `commands`. These are [entities](https://www.home-assistant.io/docs/glossary/#entity) that will be automatically added to HA. You can use these commands to control your PC from within HA.
 
-    Tip: if you want to get data from your PC to HA, you can use HASS.Agent's sensors.
+> Tip: if you want to get data from your PC to HA, you can use HASS.Agent's sensors.
 
 Commands can be different entity types:
 
@@ -36,7 +36,7 @@ You'll be shown a (possibly empty) command list:
 
 Click the `add new` button to begin creating a new command.
 
-    Tip: want to modify an existing command? Just doubleclick it!
+> Tip: want to modify an existing command? Just doubleclick it!
 
 You can see the different command types on the left. Select `Lock` to begin configuring your lock command:
 
@@ -44,12 +44,11 @@ You can see the different command types on the left. Select `Lock` to begin conf
 
 We'll pick `Button` as our entity type. HASS.Agent will try to generate a name for you, in this case `test-vm_lock`, but feel free to change that to anything you like. 
 
-    The names need to be unique! That's why it's a good idea to start with the name
-    of your pc. That way, if you install HASS.Agent on multiple pcs, they won't clash.
+> The names need to be unique! That's why it's a good idea to start with the name of your pc. That way, if you install HASS.Agent on multiple pcs, they won't clash.
 
 If you like, you can click through the command types on the left, and read their decriptions. This way you'll get a feeling for what's possible. 
 
-    Missing a command? Open a ticket on GitHub with your idea!
+> Missing a command? Open a [ticket on GitHub](https://github.com/LAB02-Research/HASS.Agent/issues) with your idea!
 
 When you're ready, click the `store command` button to continue. 
 
@@ -73,8 +72,7 @@ Go to your HA instance, and press `c`. This will show the search bar. Now type `
 
 ![image](https://user-images.githubusercontent.com/81011038/167813646-22cd747f-9094-42d4-b48b-2b17766d582f.png)
 
-    Tip: you can always find (and change) the name of your HASS.Agent instance by clicking
-    on the Configuration button in the main window.
+> Tip: you can always find (and change) the name of your HASS.Agent instance by clicking on the `configuration` button in the main window.
 
 If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's an HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
 
