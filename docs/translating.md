@@ -52,15 +52,7 @@ Thank you for your time and effort!
 
 These are the current translation heroes:
 
-| Language             | Translator                                     |  Progress   |
-|----------------------|------------------------------------------------|-------------|
-| Brazilian Portuguese | Leandro Issa                                   |  100 %      |
-| French               | Neilge, Carlos Cordero                         |   27 %      |
-| German               | Syntoxr, r100gspd                              |   11 %      |
-| Greek                | AirChreece                                     |    4 %      |
-| Polish               | Łukasz                                         |   26 %      |
-| Slovenian            | Nejc                                           |   99 %      |
-| Spanish              | Carlos Cordero                                 |    0 %      |
+![image](https://user-images.githubusercontent.com/81011038/167806134-9ff3a995-53a8-48f0-b731-e0147abbf6ad.png)
 
 
 ---
