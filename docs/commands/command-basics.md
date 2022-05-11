@@ -28,5 +28,20 @@ First, open HASS.Agent's main window, and click the `commands` button:
 
 ![image](https://user-images.githubusercontent.com/81011038/167809618-5c160b82-67f6-433a-82a3-4374b7c78292.png)
 
-> Note: don't be alarmed if the `system status` for `commands` says `stopped`: that's just because you probably don't have any commands configured yet.
+> Note: don't be alarmed if the **system status** for `commands` says `stopped`: that's just because you probably don't have any commands configured yet.
 
+You'll be shown a (possibly empty) command list:
+
+![image](https://user-images.githubusercontent.com/81011038/167810115-b485f632-8327-4cf7-be2d-340581b741ed.png)
+
+Click the `add new` button to begin creating a new command.
+
+> Tip: want to modify an existing command? Just doubleclick it!
+
+You can see the different command types on the left. Select `Lock` to begin configuring your lock command:
+
+![image](https://user-images.githubusercontent.com/81011038/167811252-2eacc702-763d-43a9-8dca-2fcd37cc30fd.png)
+
+We'll pick `Button` as our entity type. HASS.Agent will try to generate a name for you, in this case `test-vm_lock`, but feel free to change that to anything you like. 
+
+> Note: the names need to be unique! That's why it's a good idea to start with the name of your pc. That way, if you install HASS.Agent on multiple pcs, they won't clash.
