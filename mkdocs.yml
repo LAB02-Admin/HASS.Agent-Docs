@@ -16,6 +16,7 @@ nav:
     - 'sensor-command-automation-and-script-examples.md'
     - 'translating.md'
     - 'Commands':
+      - 'commands/command-basics.md'
       - 'commands/actions-usage-and-examples.md'
     - 'Media Player':
       - 'mediaplayer/mediaplayer-usage-and-examples.md'
