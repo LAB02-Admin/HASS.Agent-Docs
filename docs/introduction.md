@@ -120,4 +120,6 @@ By default, when you right-click the HASS.Agent tray icon (near your clock on th
 
 ----
 
+### Satellite Service
 
+HASS.Agent is a very easy (at least I think so) tool to configure your sensors and commands. There is however a downside: if you're not logged into Windows, it won't load, so your sensors and commands won't run. Another issue is security-wise:
