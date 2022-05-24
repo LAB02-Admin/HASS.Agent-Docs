@@ -26,7 +26,7 @@ Globally, these are the functionalities:
 | WebView | Show any webpage, without launching a browser. Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
 | Satellite Service | Process commands and sensors even when no user's logged in. Example: shutdown your PC at any time, locked or not. |
 
-Let's go over every function to go a bit more in-depth.
+Let's go over every function for a bit more in-depth.
 
 ----
 
@@ -40,7 +40,7 @@ If you want to go a bit more advanced, have a look at the actions page: [Actions
 
 ### Sensors
 
-Sensors allow you to send all sorts of telemetry from your PC to HA. A few common examples are what's the current cpu load, are you using your webcam/mic, are you logged in or is your session locked - but there are over 30 of them, so there's much more to explore.
+Sensors allow you to send all sorts of telemetry from your PC to HA. A few common examples are *what's the current cpu load*, *are you using your webcam/mic*, *are you logged in* or *is your session locked* - but there are over 30 of them, so there's much more to explore.
 
 When you create a new sensor, it shows up in HA as an entity:
 
