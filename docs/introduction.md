@@ -36,7 +36,29 @@ If you want to go a bit more advanced, have a look at the actions page: [Actions
 
 Sensors allow you to send all sorts of telemetry from your PC to HA. A few common examples are what's the current cpu load, are you using your webcam/mic, are you logged in or is your session locked - but there are over 30 of them, so there's much more to explore.
 
-When you create a new sensor, it shows up in HA as an entity. 
+When you create a new sensor, it shows up in HA as an entity:
 
-Todo: multi-value sensors
+![image](https://user-images.githubusercontent.com/81011038/170042142-705937df-f0ad-4808-aee4-7a1e87ec0aab.png)
+
+To find the entities, go to your HA instance, and press `c`. This will show the search bar. Now type `devices` and press **enter**. In the `Search devices` bar that's shown on top, type the name of your HASS.Agent instance:
+
+![image](https://user-images.githubusercontent.com/81011038/167813646-22cd747f-9094-42d4-b48b-2b17766d582f.png)
+
+> Tip: you can always find (and change) the name of your HASS.Agent instance by clicking on the `configuration` button in the main window.
+
+If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's an HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
+
+Click on your pc to see what commands and sensors are currently configured.
+
+#### Multi-Value Sensors
+
+Some sensors have multiple relevant data points. For instance, if you add a storage sensor, statistics for all your disks will get sent. You can easily see which sensors are multi-value through this column:
+
+![image](https://user-images.githubusercontent.com/81011038/170042833-dcfe8f90-d972-4758-92bc-fdb6beaa8e47.png)
+
+And here you can see the multiple sensors being added (they all start with the name you gave it):
+
+![image](https://user-images.githubusercontent.com/81011038/170043145-d7b28d68-be3b-4009-8600-20956be7c62a.png)
+
+
 
