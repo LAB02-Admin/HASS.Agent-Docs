@@ -21,8 +21,8 @@ Globally, these are the functionalities:
 | [Commands](#commands) | Control your PC from HA. Example: lock your session, open notepad or emulate a keypress. |
 | [Sensors](#sensors) | Send PC telemetry to HA. Example: cpu load, is your webcam active or is the current user active. |
 | [Quick Actions](#quick-actions) | Trigger any HA entity. Example: turn on your lights or open the garage door. |
-| Notifications | Receive a notification from HA, and show it as a Windows notification. Example: image of who's at the front door. |
-| Media Player | Control your PC from HA as if it were a mediaplayer. Example: see what Spotify song's playing, or send a text-to-speech message. |
+| [Notifications](#notifications) | Receive a notification from HA, and show it as a Windows notification. Example: image of who's at the front door. |
+| [Media Player](#media-player) | Control your PC from HA as if it were a mediaplayer. Example: see what Spotify song's playing, or send a text-to-speech message. |
 | WebView | Show any webpage, without launching a browser. Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
 | Satellite Service | Process commands and sensors even when no user's logged in. Example: shutdown your PC at any time, locked or not. |
 
@@ -82,5 +82,16 @@ And from that on you can either execute them by their individual hotkey, or pull
 
 ----
 
+### Notifications
 
+Another reason for HASS.Agent's creation was the ability to receive notifications from HA. For instance: someone presses the doorbell, and you get a notification with a picture of the guest on your PC. Because I'm usually listening to music with earpods in while working, this would be a good way to get my attention.
 
+There's a [dedicated notifications page](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) to help you set things up (with debugging manuals in the left menu), and you can also check its [GitHub readme](https://github.com/LAB02-Research/HASS.Agent-Notifier) for more info.
+
+----
+
+### Media Player
+
+The mediaplayer integration allows you to use your HASS.Agent as a mediaplayer device: see and control what's playing (regardless of what application you're actually using to play media), and send text-to-speech notifications. 
+
+There's a [dedicated mediaplayer page](https://hassagent.readthedocs.io/en/latest/mediaplayer/mediaplayer-usage-and-examples/) to help you set things up, and you can also check its [GitHub readme](https://github.com/LAB02-Research/HASS.Agent-MediaPlayer) for more info.
