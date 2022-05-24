@@ -6,6 +6,8 @@ Tip: you can use Home Assistant's [glossary](https://www.home-assistant.io/docs/
 
 > Note: this document includes features that are available starting with [2022.12.0-beta2](https://github.com/LAB02-Research/HASS.Agent/releases/tag/2022.12.0-beta2), and will be publicly available with 2022.12.0.
 
+----
+
 ### Overview
 
 In general, HASS.Agent is a client (*companion*) application for Home Assistant. It's being developed for Windows, with Windows 10 and 11 in mind - previous versions *may* work. 
@@ -16,9 +18,9 @@ Globally, these are the functionalities:
 
 | Function | Description |
 | ------------ | ------------- |
-| Commands | Control your PC from HA. Example: lock your session, open notepad or emulate a keypress. |
-| Sensors | Send PC telemetry to HA. Example: cpu load, is your webcam active or is the current user active. |
-| Quick Actions | Trigger any HA entity. Example: turn on your lights or open the garage door. |
+| [Commands](#commands) | Control your PC from HA. Example: lock your session, open notepad or emulate a keypress. |
+| [Sensors](#sensors) | Send PC telemetry to HA. Example: cpu load, is your webcam active or is the current user active. |
+| [Quick Actions](#quick-actions) | Trigger any HA entity. Example: turn on your lights or open the garage door. |
 | Notifications | Receive a notification from HA, and show it as a Windows notification. Example: image of who's at the front door. |
 | Media Player | Control your PC from HA as if it were a mediaplayer. Example: see what Spotify song's playing, or send a text-to-speech message. |
 | WebView | Show any webpage, without launching a browser. Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
@@ -26,11 +28,15 @@ Globally, these are the functionalities:
 
 Let's go over every function to go a bit more in-depth.
 
+----
+
 ### Commands
 
 Commands have their own introduction page: [Command Basics](commands/command-basics.md).
 
 If you want to go a bit more advanced, have a look at the actions page: [Actions Usage and Examples](commands/actions-usage-and-examples.md). Actions allow you to send variables alongside your command, so you can for example have you HA automation decide what URL you want to show.
+
+----
 
 ### Sensors
 
@@ -59,6 +65,22 @@ Some sensors have multiple relevant data points. For instance, if you add a stor
 And here you can see the multiple sensors being added (they all start with the name you gave it):
 
 ![image](https://user-images.githubusercontent.com/81011038/170043145-d7b28d68-be3b-4009-8600-20956be7c62a.png)
+
+----
+
+### Quick Actions
+
+One of the reasons for developing HASS.Agent was the ability to easily trigger HA entities. For instance, if I want to turn on a light, I don't want to open an app or browser and go to the right dashboard. Nor do I always want to say it out load to a Google Home-device of sorts. To make that possible, HASS.Agent has Quick Actions. 
+
+You configure them once by selected the desired entity and the desired state:
+
+![New Quick Actions](https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/hass_agent_new_quickaction.png)
+
+And from that on you can either execute them by their individual hotkey, or pull up the list of quick actions by their global hotkey:
+
+![Quick Actions](https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/hass_agent_quickactions.png)
+
+----
 
 
 
