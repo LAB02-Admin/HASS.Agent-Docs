@@ -13,6 +13,10 @@ Need additional help? Visit the [dedicated HA forum thread](https://community.ho
 
 ----
 
+Absolute beginner, and want to learn what HASS.Agent's about and how to start? Be sure to check the [introduction article](https://hassagent.readthedocs.io/en/latest/introduction/), and optionally the [command basics](https://hassagent.readthedocs.io/en/latest/commands/command-basics/).
+
+----
+
 Have anything to add? Feel free to create pull requests for the [documentation repo](https://github.com/LAB02-Admin/HASS.Agent-Docs), or just send a mail to lab02research@outlook.com. Thanks!
 
 ----
