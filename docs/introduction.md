@@ -18,13 +18,13 @@ Globally, these are the functionalities:
 
 | Function | Description |
 | ------------ | ------------- |
-| [Commands](#commands) | Control your PC from HA. Example: lock your session, open notepad or emulate a keypress. |
-| [Sensors](#sensors) | Send PC telemetry to HA. Example: cpu load, is your webcam active or is the current user active. |
-| [Quick Actions](#quick-actions) | Trigger any HA entity. Example: turn on your lights or open the garage door. |
-| [Notifications](#notifications) | Receive a notification from HA, and show it as a Windows notification. Example: image of who's at the front door. |
-| [Media Player](#media-player) | Control your PC from HA as if it were a mediaplayer. Example: see what Spotify song's playing, or send a text-to-speech message. |
-| [WebView](#webview) | Show any webpage, without launching a browser. Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
-| [Satellite Service](#satellite-service) | Process commands and sensors even when no user's logged in. Example: shutdown your PC at any time, locked or not. |
+| [Commands](#commands) | Control your PC from HA.<br/>Example: lock your session, open notepad or emulate a keypress. |
+| [Sensors](#sensors) | Send PC telemetry to HA.<br/>Example: cpu load, is your webcam active or is the current user active. |
+| [Quick Actions](#quick-actions) | Trigger any HA entity.<br/>Example: turn on your lights or open the garage door. |
+| [Notifications](#notifications) | Receive a notification from HA, and show it as a Windows notification.<br/>Example: image of who's at the front door. |
+| [Media Player](#media-player) | Control your PC from HA as if it were a mediaplayer.<br/>Example: see what Spotify song's playing, or send a text-to-speech message. |
+| [WebView](#webview) | Show any webpage, without launching a browser.<br/>Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
+| [Satellite Service](#satellite-service) | Process commands and sensors even when no user's logged in.<br/>Example: shutdown your PC at any time, locked or not. |
 
 Let's go over every function for a bit more in-depth.
 
