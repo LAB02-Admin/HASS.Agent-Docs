@@ -7,6 +7,7 @@ theme:
 
 nav:
     - Home: index.md
+    - 'introduction.md'
     - 'installation.md'
     - 'configuration.md'
     - 'installation-and-configuration-summary.md'
