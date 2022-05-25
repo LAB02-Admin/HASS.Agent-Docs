@@ -24,7 +24,7 @@ Globally, these are the functionalities:
 | [Notifications](#notifications) | Receive a notification from HA, and show it as a Windows notification. Example: image of who's at the front door. |
 | [Media Player](#media-player) | Control your PC from HA as if it were a mediaplayer. Example: see what Spotify song's playing, or send a text-to-speech message. |
 | [WebView](#webview) | Show any webpage, without launching a browser. Example: show a HA dashboard when rightclicking HASS.Agent's tray icon. |
-| Satellite Service | Process commands and sensors even when no user's logged in. Example: shutdown your PC at any time, locked or not. |
+| [Satellite Service](#satellite-service) | Process commands and sensors even when no user's logged in. Example: shutdown your PC at any time, locked or not. |
 
 Let's go over every function for a bit more in-depth.
 
@@ -122,4 +122,34 @@ By default, when you right-click the HASS.Agent tray icon (near your clock on th
 
 ### Satellite Service
 
-HASS.Agent is a very easy (at least I think so) tool to configure your sensors and commands. There is however a downside: if you're not logged into Windows, it won't load, so your sensors and commands won't run. Another issue is security-wise:
+HASS.Agent is a very easy (at least I think so) tool to configure your sensors and commands. There is however a downside: if you're not logged into Windows, it won't load, so your sensors and commands won't run. Another issue is security-wise: HASS.Agent runs with the least possible privileges, but that means you can't perform commands that would require elevation.
+
+To allow for all that, the satellite service was added. This is a Windows service which runs in the background, and allows you to run sensors and commands without having to be logged in - and with elevated privileges (be careful though when running potential hazardous commands).
+
+You can start tinkering by clicking the `satellite service` button in the main window:
+
+![image](https://user-images.githubusercontent.com/81011038/170235862-77607bba-7915-449b-9f97-c68d49fb2f6e.png)
+
+It's ok to ignore the `General` tab (unless you want to change something, and do take note of the `device name` -> that's how the service shows up in your HA instance). However, you do need to configure MQTT. Click the `MQTT` tab on top to get there. 
+
+To make things easier, just click the `copy from hass.agent` button (it'll change the `client id` value to avoid username collisions) and click `send and activate config`:
+
+![image](https://user-images.githubusercontent.com/81011038/170237522-92895ff5-5c79-4785-9394-7c674db8479a.png)
+
+> Tip: if the status remains `disconnected`, restart the service (go to `Configuration` in the main window, then tab `Satellite Service` and click `stop service` and `start service` respectively) and check again.
+
+Afterwards, you can use the `Commands` and `Sensors` tabs on top to start adding your entities. HASS.Agent will warn you when a certain command or sensor can't be run via the satellite service. 
+
+**Remember to click the `send and activate` button after adding or modifying your entities!**
+
+> Note: you can't do anything that would require an UI in the satellite service - for instance, you can't open a browser. It wouldn't show.
+
+----
+
+If you need more info or want to talk, please feel free to reach out:
+
+* [Github Tickets](https://github.com/LAB02-Research/HASS.Agent): Report bugs, feature requests, ideas, tips, ..
+
+* [Discord](https://discord.gg/nMvqzwrVBU): Get help with setting up and using HASS.Agent, report bugs or just talk about whatever.
+
+* [Home Assistant forum](https://community.home-assistant.io/t/hass-agent-a-new-windows-based-client-to-receive-notifications-perform-quick-actions-and-much-more/369094): Bit of everything, with the addition that other HA users can help as well.
