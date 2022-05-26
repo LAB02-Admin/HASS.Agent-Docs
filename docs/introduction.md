@@ -10,7 +10,7 @@ Tip: you can use Home Assistant's [glossary](https://www.home-assistant.io/docs/
 
 ### Overview
 
-In general, HASS.Agent is a client (*companion*) application for Home Assistant. It's being developed for Windows, with Windows 10 and 11 in mind - previous versions *may* work. 
+In general, HASS.Agent is a client (*companion*) application for Home Assistant. It's being developed for Windows, with Windows 10 and 11 (fully up-to-date) in mind - previous versions or unpatched systems *may* work. 
 
 The communication goes both ways: HASS.Agent can send data to HA, and HA can send data to HASS.Agent. In other words: you can use HASS.Agent to control and inform HA, and you can use HA to control HASS.Agent.
 
@@ -52,7 +52,7 @@ To find the entities, go to your HA instance, and press `c`. This will show the 
 
 > Tip: you can always find (and change) the name of your HASS.Agent instance by clicking on the `configuration` button in the main window.
 
-If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's an HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
+If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's a HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
 
 Click on your pc to see what commands and sensors are currently configured.
 
