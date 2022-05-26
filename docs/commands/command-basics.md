@@ -46,7 +46,7 @@ We'll pick `Button` as our entity type. HASS.Agent will try to generate a name f
 
 > The names need to be unique! That's why it's a good idea to start with the name of your pc. That way, if you install HASS.Agent on multiple pcs, they won't clash.
 
-If you like, you can click through the command types on the left, and read their decriptions. This way you'll get a feeling for what's possible. 
+If you like, you can click through the command types on the left, and read their descriptions. This way you'll get a feeling for what's possible. 
 
 > Missing a command? Open a [ticket on GitHub](https://github.com/LAB02-Research/HASS.Agent/issues) with your idea!
 
@@ -74,7 +74,7 @@ Go to your HA instance, and press `c`. This will show the search bar. Now type `
 
 > Tip: you can always find (and change) the name of your HASS.Agent instance by clicking on the `configuration` button in the main window.
 
-If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's an HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
+If your HASS.Agent is properly configured, your pc will now show as a result. You can easily verify it's a HASS.Agent instance by confirming it says `LAB02 Research` under the `Manufacturer` column.
 
 Click on your pc to see what commands and sensors are configured. It should at least show our new command:
 
