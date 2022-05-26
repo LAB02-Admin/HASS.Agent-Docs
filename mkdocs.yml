@@ -15,6 +15,7 @@ nav:
     - 'usage.md'
     - 'performance-counter-debugging.md'
     - 'sensor-command-automation-and-script-examples.md'
+    - 'wmi-examples.md'
     - 'translating.md'
     - 'Commands':
       - 'commands/command-basics.md'
