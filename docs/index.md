@@ -11,6 +11,8 @@ Please consult the various topics on the left for more information.
 
 Need additional help? Visit the [dedicated HA forum thread](https://community.home-assistant.io/t/hass-agent-a-new-windows-based-client-to-receive-notifications-perform-quick-actions-and-much-more/369094) or [join on Discord](https://discord.gg/nMvqzwrVBU).
 
+Visit the [LAB02 Research Site](https://lab02-research.org/) for release info, development backstories, and misc. posts.
+
 ----
 
 Starting from zero, and want to learn what HASS.Agent's about and how to start? Be sure to check the [introduction article](https://hassagent.readthedocs.io/en/latest/introduction/), and optionally the [command basics](https://hassagent.readthedocs.io/en/latest/commands/command-basics/).
