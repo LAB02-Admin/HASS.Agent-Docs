@@ -66,3 +66,8 @@ Some extra info:
 * You can't control the volume, but you can use Windows' Volume Mixer:
 
 ![image](https://user-images.githubusercontent.com/81011038/165731564-d870fe88-1836-4d58-ab79-22d94c401486.png)
+
+If you're not getting your current-song information from Spotify, make sure this setting is enabled:
+
+![image](https://user-images.githubusercontent.com/81011038/171420676-111115c0-ff15-4dad-978d-b5f3e7b6397c.png)
+
