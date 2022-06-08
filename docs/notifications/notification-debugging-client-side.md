@@ -1,6 +1,6 @@
 # Notification Debugging - Client Side
 
-The info on this page is focussed on making sure notifications work on the client side: HASS.Agent on your PC. Use [Notification Debugging - HA Side](https://github.com/LAB02-Research/HASS.Agent/wiki/Notification-Debugging-:-HA-Side) to debug on Home Assistant's side.
+The info on this page is focussed on making sure notifications work on the client side: HASS.Agent on your PC. Use [Notification Debugging - HA Side](https://hassagent.readthedocs.io/en/latest/notifications/notification-debugging-ha-side/) to debug on Home Assistant's side.
 
 If it still doesn't work after following all below steps, ask for help on [Discord](https://discord.gg/nMvqzwrVBU) or open a [Github Ticket](https://github.com/LAB02-Research/HASS.Agent/issues).
 
