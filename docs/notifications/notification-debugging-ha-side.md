@@ -1,6 +1,6 @@
 # Notification Debugging - HA Side
 
-The info on this page is focussed on making sure notifications work on Home Assistant's side. Use [Notification Debugging - Client Side](https://github.com/LAB02-Research/HASS.Agent/wiki/Notification-Debugging-:-Client-Side) to debug on the client (HASS.Agent on your PC) side.
+The info on this page is focussed on making sure notifications work on Home Assistant's side. Use [Notification Debugging - Client Side](https://hassagent.readthedocs.io/en/latest/notifications/notification-debugging-client-side/) to debug on the client (HASS.Agent on your PC) side.
 
 If it still doesn't work after following all below steps, ask for help on [Discord](https://discord.gg/nMvqzwrVBU) or open a [Github Ticket](https://github.com/LAB02-Research/HASS.Agent/issues).
 
@@ -10,7 +10,7 @@ If it still doesn't work after following all below steps, ask for help on [Disco
 
 The most important part is that you get the basic configuration right. You need to create a `notify` entity, and use that in your automations and scripts.
 
-Please follow [this guide](https://github.com/LAB02-Research/HASS.Agent/wiki/Notification-Usage-&-Examples) to make sure the basics are good.
+Please follow [this guide](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) to make sure the basics are good.
 
 ----
 
