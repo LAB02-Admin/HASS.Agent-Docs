@@ -48,7 +48,7 @@ Enter your MQTT broker configuration. This is only required if you want to use c
 
 #### 8. Notifications
 
-Make sure the integration has been installed and configured in Home Assistant, and actually works (there are test scripts available in the [wiki](https://github.com/LAB02-Research/HASS.Agent/wiki/Notification-Usage-&-Examples)). In the configuration screen, check the `accept notifications` box and change the default port if needed.
+Make sure the integration has been installed and configured in Home Assistant, and actually works (there are test scripts available in the [docs](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/)). In the configuration screen, check the `accept notifications` box and change the default port if needed.
 
 After changing the port (or enabling/disabling), HASS.Agent will perform the port binding and create/modify the firewall rule as soon as you save your changes. This requires elevation, so you'll be shown an UAC prompt.
 
