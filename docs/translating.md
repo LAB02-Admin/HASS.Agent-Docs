@@ -28,6 +28,12 @@ POEditor will help you if you forget something:
 
 Just click on your text so it becomes editable, change it and continue with the next one.
 
+To make keyboard shortcuts possible, the `&` sign is added in front of the relevant letter. For instance, in this screenshot:
+
+![image](https://user-images.githubusercontent.com/81011038/173122859-25cf80ff-3ea7-4a19-8a90-c6572c8735a9.png)
+
+The translation reads `&hide`. Please add the & in front of the corresponding letter in your translation. If the letter is absent, drop the & instead of assigning it to a random letter (otherwise there might be collisions).
+
 ---
 
 Tip (thanks Nejc), you can use `Automatic Translation`:
