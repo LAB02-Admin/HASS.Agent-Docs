@@ -20,7 +20,7 @@ Check that you have a HASS.Agent device open, by looking at the `Device info` - 
 
 Now click the hamburger menu (the three vertical dots) and click `Delete device`:
 
-![image](https://user-images.githubusercontent.com/81011038/174077836-6b79412c-7273-4f05-bc1f-05bfb93ccaa2.png)
+![image](https://user-images.githubusercontent.com/81011038/174080841-798cfc60-ac98-4d7a-a6bb-aa808a79af4d.png)
 
 You'll get a popup asking you to confirm, simply click `OK`. HA will show you a `Device / service not found.` page:
 
