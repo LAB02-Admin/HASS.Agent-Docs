@@ -38,10 +38,12 @@ If you want to remove HASS.Agent, simply do so through Windows' configuration sc
 
 This **wil not delete** your settings, sensors and commands. So if you want to downgrade, at this point you can install the version you want and be done (note that older versions might not support your config).
 
-If you want to completely clean up, or backup your settings, open explorer and browse here: `%APPDATA%\LAB02 Research\HASS.Agent`
+If you want to completely clean up, or backup your settings, open explorer and navigate to: `%APPDATA%\LAB02 Research\HASS.Agent`
 
-To perform a backup, simply copy the `config` folder. If you want to clean up, completely remove this `HASS.Agent` folder.
+To perform a backup: copy the `config` folder.<br/>
+To clean up: completely remove this `HASS.Agent` folder.
 
-Afterwards go here: `%PROGRAMFILES(X86)%\LAB02 Research\HASS.Agent Satellite Service`
+For the Satellite Service, navigate to: `%PROGRAMFILES(X86)%\LAB02 Research\HASS.Agent Satellite Service`
 
-Same story, to backup, copy the `config` folder. To clean up, completely remove this `HASS.Agent Satellite Service` folder.
+To perform a backup: copy the `config` folder.<br/>
+To clean up: completely remove this `HASS.Agent Satellite Service` folder.
