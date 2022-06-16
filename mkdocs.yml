@@ -15,8 +15,8 @@ nav:
     - 'usage.md'
     - 'clean-slate.md'
     - 'performance-counter-debugging.md'
-    - 'sensor-command-automation-and-script-examples.md'
-    - 'wmi-examples.md'
+    - Sensor Command Automation and Script Examples: 'sensor-command-automation-and-script-examples.md'
+    - WMI Examples: 'wmi-examples.md'
     - 'translating.md'
     - 'Commands':
       - 'commands/command-basics.md'
