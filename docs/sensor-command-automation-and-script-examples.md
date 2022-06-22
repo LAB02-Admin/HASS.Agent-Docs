@@ -79,6 +79,7 @@ This places the GeoLocation sensor as a `device_tracker` on the map (thanks **Ne
 WMI Query Sensor:
 
 Query: `SELECT Capacity FROM Win32_PhysicalMemory`
+
 Scope: `\\.\Root\CIMV2`
 
 Home Assistant Template Sensor:
