@@ -74,7 +74,7 @@ mode: single
 
 This places the GeoLocation sensor as a `device_tracker` on the map (thanks **Neilge**).
 
-#### Sensor: RAM as percentage
+#### Sensor: RAM from Percent to Usage/Total
 
 WMI Query Sensor:
 
