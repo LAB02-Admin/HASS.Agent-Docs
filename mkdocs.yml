@@ -15,8 +15,11 @@ nav:
     - 'usage.md'
     - 'clean-slate.md'
     - 'performance-counter-debugging.md'
-    - Sensor Command Automation and Script Examples: 'sensor-command-automation-and-script-examples.md'
-    - WMI Examples: 'wmi-examples.md'
+    - 'Examples':
+      - Misc Examples: 'sensor-command-automation-and-script-examples.md'
+      - WMI Examples: 'wmi-examples.md'
+      - 'examples/activewindowsensor-multiple-processes.md'
+      - 'examples/adjust-screen-brightness.md'
     - 'translating.md'
     - 'Commands':
       - 'commands/command-basics.md'
