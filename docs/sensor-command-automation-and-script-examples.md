@@ -73,3 +73,26 @@ mode: single
 ```
 
 This places the GeoLocation sensor as a `device_tracker` on the map (thanks **Neilge**).
+
+#### Sensor: RAM as percentage
+
+WMI Query Sensor:
+
+Query: `SELECT Capacity FROM Win32_PhysicalMemory`
+Scope: `\\.\Root\CIMV2`
+
+Home Assistant Template Sensor:
+
+```yaml
+- sensor:
+        - name: "RAM Usage"
+          state: >
+            {% set ram = states('sensor.laptop_memoryusage') | float %}
+            {% set ramTotal = states('sensor.laptop_ramtotal') | int * 2 / 1024 / 1024 / 1024 %}
+            {% set usage = ramTotal | float / 100 * ram | round(0, default=0) %}
+            {% set state = usage | string + "GB" + "/" + ramTotal | string + "GB" %}
+    
+            {{state}}
+```
+
+Thanks **Celisuis** ([forum post](https://community.home-assistant.io/t/hass-agent-windows-client-to-receive-notifications-use-commands-sensors-quick-actions-and-more/369094/198?u=samkr)).
