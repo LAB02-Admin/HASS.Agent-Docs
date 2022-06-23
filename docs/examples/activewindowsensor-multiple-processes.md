@@ -1,6 +1,8 @@
 # ActiveWindowSensor - Multiple Processes
 
-This example allows you to monitor multiple processes, by using an ActiveWindowSensor. It was created by @DivanX10 ([#87](https://github.com/LAB02-Research/HASS.Agent/issues/87)).
+This example allows you to monitor multiple processes, by using an ActiveWindowSensor. It was created by [@DivanX10](https://github.com/DivanX10) ([#87](https://github.com/LAB02-Research/HASS.Agent/issues/87)).
+
+Edit 23.06.2022: [@DivanX10](https://github.com/DivanX10) created a new version which allows you to detect more specifically, for instance with `ignoreCase`. You can [find the new version here](https://community.home-assistant.io/t/hass-agent-windows-client-to-receive-notifications-use-commands-sensors-quick-actions-and-more/369094/203).
 
 ---
 
