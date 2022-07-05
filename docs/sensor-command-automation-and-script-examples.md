@@ -53,6 +53,13 @@ tts_test:
 
 Alternative version: use a `Hibernate Command` to put your PC in hibernation instead.
 
+You may need to enable a rule in Windows Firewall to allow ICMP (ping) packets. Open **Windows Defender Firewall with Advanced Security** by running `wf.msc` and go to **Inbound Rules**. Then look up the rules called `File and Printer Sharing (Echo Request - ICMPv*-In)`, and enable the ICMPv4 variants.
+
+To manually add a rule, consult these docs (thanks @ArekkusuDesu):
+
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule
+
+
 #### Sensor: GeoLocation
 
 ```yaml
