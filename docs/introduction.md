@@ -4,6 +4,8 @@ This page explains the basics behind HASS.Agent: what is it and what can it do. 
 
 Tip: you can use Home Assistant's [glossary](https://www.home-assistant.io/docs/glossary/) to look up words you don't know yet.
 
+Tip: EverythingSmartHome's youtube video is a great guide to get you started: [Control Your Windows PC With Home Assistant!](https://www.youtube.com/watch?v=B4SnJPVbSXc)
+
 > Note: this document may include features that are only available in the latest beta. Check the [release page](https://github.com/LAB02-Research/HASS.Agent/releases) for a list of all releases.
 
 ----
