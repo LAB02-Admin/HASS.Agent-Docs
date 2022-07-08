@@ -46,6 +46,10 @@ Depending on your Windows version, you may also need to make sure that the `Acti
 
 ![image](https://user-images.githubusercontent.com/81011038/160234962-8a1df96d-9aef-4771-a686-2b1b2b04bb87.png)
 
+**Important**: if you have focus assist active, you need to add HASS.Agent to the **Priority list** (thanks @jrnhrmn):
+
+[How to Customize Focus Assist Priority List in Windows 10](https://www.tenforums.com/tutorials/102205-customize-focus-assist-priority-list-windows-10-a.html)
+
 When you've done all this, try the `show test notification` button again in HASS.Agent. 
 
 Did the notification show? Great, you can now finish setting up in Home Assistant. If not, continue below.
