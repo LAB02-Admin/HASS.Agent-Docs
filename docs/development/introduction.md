@@ -2,6 +2,8 @@
 
 These pages are meant as a quick introduction into how HASS.Agent is developed, in case you want to help out (or use code for your own projects).
 
+Use the subpages on the left to learn more about specific parts.
+
 **Do not use this guide if you just want to manually build and use HASS.Agent. Please see [these instructions](https://hassagent.readthedocs.io/en/latest/installation/#3-build-from-scratch) on how to do that.**
 
 ----
