@@ -31,3 +31,7 @@ nav:
       - 'notifications/notification-debugging-client-side.md'
       - 'notifications/notification-debugging-ha-side.md'
       - 'notifications/notification-debugging-ssl.md'
+    - 'Development':
+      - 'development/introduction.md'
+      - 'development/commands.md'
+      - 'development/sensors.md'
