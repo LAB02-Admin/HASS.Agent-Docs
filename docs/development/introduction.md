@@ -22,10 +22,11 @@ Its purpose is to more easily develop beta releases, as the shared library will 
 
 ### General Notes
 
-1) Make sure any regular instance of HASS.Agent is shut down. If you're just planning to tinker with HASS.Agent, you can leave the regular service active, otherwise turn it off as well as the named pipe will be in use. Start the beta service with elevated privileges.
+1) I'm a big fan of the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), especially since it's a project I maintain in my freetime. If I don't *need* a design pattern, I don't use it. By keeping it simple, I can easily tinker with whatever I want, as fast as possible. However, if you do want to build something complex because that's how you roll, knock yourself out - just give me a heads up.
 
-2) It's best to have `enable extended logging` enabled, which will also reflect on the satellite service (as long as it's started in console mode instead of service mode). But that'll also generate false positives, so primarily focus on the issue at hand.
+2) Make sure any regular instance of HASS.Agent is shut down. If you're just planning to tinker with HASS.Agent, you can leave the regular service active, otherwise turn it off as well as the named pipe will be in use. Start the beta service with elevated privileges.
 
-3) A lot has been done for localization and screenreader support. Don't bother about either during beta development; just use regular strings and mess about the UI as you like. The dev will implement it for the release candidate and make sure it's done in a uniform matter.
+3) It's best to have `enable extended logging` enabled, which will also reflect on the satellite service (as long as it's started in console mode instead of service mode). But that'll also generate false positives, so primarily focus on the issue at hand.
 
-4) I'm a big fan of the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), especially since it's a project I maintain in my freetime. If I don't *need* a design pattern, I don't use it. By keeping it simple, I can easily tinker with whatever I want, as fast as possible. However, if you do want to build something complex because that's what you prefer or see fit, knock yourself out, just give me a heads up.
+4) A lot has been done for localization and screenreader support. Don't bother about either during beta development; just use regular strings and mess about the UI as you like. The dev will implement it for the release candidate and make sure it's done in a uniform matter.
+
