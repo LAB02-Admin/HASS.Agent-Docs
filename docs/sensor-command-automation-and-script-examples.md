@@ -107,7 +107,7 @@ The sensor makes the assumption that you have 2 identical sticks of RAM installe
 
 Thanks **Celisuis** ([forum post](https://community.home-assistant.io/t/hass-agent-windows-client-to-receive-notifications-use-commands-sensors-quick-actions-and-more/369094/198?u=samkr))!
 
-#### Change LCDs brightness based on lux and session state
+#### Automation: Change LCD brightness based on lux and session state
 
 Uses a CustomCommand with Actions to trigger Monitorian, and a LastSystemStateChangeSensor to check whether the user's active.
 
@@ -143,4 +143,4 @@ action:
       value: '{{ lux_lcd01 }}'
 ```
 
-Thanks [@Draghmar](https://github.com/Draghmar)!
+Thanks @Draghmar!
