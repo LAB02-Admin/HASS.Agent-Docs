@@ -115,14 +115,20 @@ Uses a CustomCommand with Actions to trigger Monitorian, and a LastSystemStateCh
 alias: Change LCDs brightness based on lux
 mode: queued
 variables:
+  # 25 - min value to set on first LCD (my LCD is hard to view below this value)
+  # 30 - the difference between max value and min value that should be set, which gives us number of steps LCD can be set on (above 55 my LCD is already to bright for normal viewing)
+  # 220 - the max lux value I've observed where the LCDs are standing throughout normal day of work
+  # states("sensor.xiaomi_lumi_sen_ill_mgl01_illuminance") | int(0) - make sure to get int value, not text
   lux_lcd01: '{{ 25 + (( (states("sensor.xiaomi_lumi_sen_ill_mgl01_illuminance") | int(0)) / 220) * 30) | int(0) }}'
 trigger:
   - platform: state
     entity_id: sensor.xiaomi_lumi_sen_ill_mgl01_illuminance
     to: ~ 
 condition:
+  # set brightness only if the PC is up by looking for specific values from sensor set in HASS.Agent
   - condition: template
     value_template: "{{ states('sensor.earth_lastsystemstatechange') in ['ApplicationStarted', 'Resume', 'SessionLogon', 'SessionUnlock'] }}"
+  # don't update brightness if the last trigger was less the 10s ago but do if there was no trigger at all (like after restarting HA)
   - condition: template
     value_template: "{{ state_attr('automation.lcd_change_brightness', 'last_triggered') != 'None' or ((as_timestamp(utcnow()) - as_timestamp(state_attr('automation.lcd_change_brightness', 'last_triggered')) |int(0) ) > 10) }}"
   - condition: template
@@ -135,7 +141,9 @@ action:
   - service: mqtt.publish
     data:
       topic: "homeassistant/light/EARTH/set_lcd01_brightness/action"
+      # this is the same as for lux_lcd01 but second LCD has different min and max (zero and 7 - yeah, that's how bright it is...)
       payload_template: '%LOCALAPPDATA%\\Microsoft\\WindowsApps\\Monitorian.exe /set "DISPLAY\PHL08E9\5&3f30a18&0&UID4355" {{ (( (states("sensor.xiaomi_lumi_sen_ill_mgl01_illuminance") | int(0)) / 220) * 7) | int(0) }}'
+  # I'm saving this to use later on when checking if the brightness changes even if the lux changed (automation was triggered)
   - service: input_number.set_value
     target:
       entity_id: input_number.lux_value_for_automation
@@ -143,4 +151,4 @@ action:
       value: '{{ lux_lcd01 }}'
 ```
 
-Thanks @Draghmar!
+Thanks @Draghmar! Awesome detailed writeup :)
