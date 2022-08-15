@@ -152,3 +152,109 @@ action:
 ```
 
 Thanks @Draghmar! Awesome detailed writeup :)
+
+#### Light: Create a light entity for your monitor's powerstate
+
+```yaml
+- platform: template
+  lights:
+    pc_monitor:
+      friendly_name: "PC Monitor"
+      unique_id: pc_monitor
+      availability_template: '{{ not is_state("binary_sensor.my_pc_is_active", "unknown") }}'
+      icon_template: >-
+        hass: monitor
+      value_template: >-
+        {{ is_state("sensor.windows_11_monitorpowerstate", "PowerOn") }}
+      turn_on:
+        service: button.press
+        entity_id: button.windows_11_monitorwake
+      turn_off:
+        service: button.press
+        entity_id: button.windows_11_monitorsleep
+```
+
+Thanks @danielbrunt57!
+
+#### Automation: Toggle light based on motion and pc activity
+
+```yaml
+alias: Office Lights
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.my_pc_is_active
+    id: PC Active
+    to: "on"
+  - platform: state
+    entity_id:
+      - binary_sensor.office_motion
+    id: Motion on
+    to: "on"
+  - platform: state
+    entity_id:
+      - binary_sensor.my_pc_is_active
+    id: PC Idle
+    to: "off"
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  - platform: state
+    entity_id:
+      - binary_sensor.office_motion
+    to: "off"
+    id: Motion off
+    for:
+      hours: 0
+      minutes: "{{ states('input_number.office_lights_auto_off_time') }}"
+      seconds: 0
+condition: []
+action:
+  - choose:
+      - conditions:
+          - condition: or
+            conditions:
+              - condition: trigger
+                id: PC Active
+              - condition: trigger
+                id: Motion on
+        sequence:
+          - if:
+              - condition: state
+                entity_id: sensor.windows_11_monitorpowerstate
+                state: "PowerOff"
+            then:
+              - service: light.turn_on
+                data: {}
+                target:
+                  entity_id: light.pc_monitor
+          - if:
+              - condition: state
+                entity_id: light.office_lights
+                state: "off"
+            then:
+              - service: light.turn_on
+                data: {}
+                target:
+                  entity_id: light.office_lights
+      - conditions:
+          - condition: and
+            conditions:
+              - condition: state
+                entity_id: binary_sensor.my_pc_is_active
+                state: "off"
+              - condition: state
+                entity_id: binary_sensor.office_motion
+                state: "off"
+        sequence:
+          - service: light.turn_off
+            data: {}
+            target:
+              area_id: office
+    default: []
+mode: restart
+```
+
+Thanks @danielbrunt57!
