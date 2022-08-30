@@ -258,3 +258,44 @@ mode: restart
 ```
 
 Thanks @danielbrunt57!
+
+#### Command: Grab screenshot using Powershell
+
+A small Powershell script to save the screen and write it to the www folder on home assistant, then use the standard Generic Camera to use the image.
+This is the powershell to grab the shot. Then simply schedule a standard automation to update every two minutes.
+
+```PS
+$Path = "\\HOMEASSISTANT\config\www"
+
+# Make sure that the directory to keep screenshots has been created, otherwise create it
+If (!(test-path $path)) {
+  New-Item -ItemType Directory -Force -Path $path
+}
+
+Add-Type -AssemblyName System.Windows.Forms
+
+$screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+
+# Get the current screen resolution
+$image = New-Object System.Drawing.Bitmap($screen.Width, $screen.Height)
+
+# Create a graphic object
+$graphic = [System.Drawing.Graphics]::FromImage($image)
+
+$point = New-Object System.Drawing.Point(0, 0)
+
+$graphic.CopyFromScreen($point, $point, $image.Size);
+
+$cursorBounds = New-Object System.Drawing.Rectangle([System.Windows.Forms.Cursor]::Position, [System.Windows.Forms.Cursor]::Current.Size)
+
+# Get a screenshot
+[System.Windows.Forms.Cursors]::Default.Draw($graphic, $cursorBounds)
+
+# $screen_file = "$Path\" + $env:computername + "_" + $env:username + "_" + "$((get-date).tostring('yyyy.MM.dd-HH.mm.ss')).png"
+$screen_file = "$Path\" + $env:computername + "-screenshot.png"
+
+# Save the screenshot as a PNG file
+$image.Save($screen_file, [System.Drawing.Imaging.ImageFormat]::Png)
+```
+
+Thanks kind [stranger](https://lab02research.youtrack.cloud/issue/hassagent-85/Sensor-Screenshot#focus=Comments-4-19.0-0)! 
