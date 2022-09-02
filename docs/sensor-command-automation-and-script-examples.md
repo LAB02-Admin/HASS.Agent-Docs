@@ -298,4 +298,8 @@ $screen_file = "$Path\" + $env:computername + "-screenshot.png"
 $image.Save($screen_file, [System.Drawing.Imaging.ImageFormat]::Png)
 ```
 
-Thanks kind [stranger](https://lab02research.youtrack.cloud/issue/hassagent-85/Sensor-Screenshot#focus=Comments-4-19.0-0)! 
+Thanks kind [stranger](https://lab02research.youtrack.cloud/issue/hassagent-85/Sensor-Screenshot#focus=Comments-4-19.0-0)!
+
+Note: make sure your PS execution policy [allows execution](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2) (to allow remote unsigned, but require remote scripts to be signed, use `Set-ExecutionPolicy RemoteSigned`). Thanks **drjjr**!
+
+ 
