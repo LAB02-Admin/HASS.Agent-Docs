@@ -28,3 +28,61 @@ You need a notifier entity ready, check the [examples](https://hassagent.readthe
 
 Let's prepare the notification. For our test, we'll create a script to handle that. In the GUI editor, configure it like this:
 
+![image](https://user-images.githubusercontent.com/81011038/190641858-7c773f00-55cd-447b-acf6-de3938327200.png)
+
+Or if you're into yaml:
+
+```yaml
+alias: Notification - Actionable Test
+sequence:
+  - service: notify.hass_agent_staging
+    data:
+      title: Test
+      message: This is an actionable test message.
+      data:
+        actions:
+          - action: "yes"
+            title: "Yes"
+          - action: "no"
+            title: "No"
+mode: single
+icon: mdi:bell
+```
+
+We added two actions: `yes` and `no`, which will show as `Yes` and `No` in the notification.
+
+### Action Automations
+
+HA needs to know what to do with the triggered actions, so let's make corresponding automations.
+
+First the trigger for our `yes` automation:
+
+![image](https://user-images.githubusercontent.com/81011038/190642484-57fd2826-1d85-41b2-847b-4107403a1d32.png)
+
+The `device_name` value helps us bind it to a specific device.
+
+Then the action, it just sends another notification:
+
+![image](https://user-images.githubusercontent.com/81011038/190642903-4e5107eb-5778-4582-a1e6-96ef1398dd32.png)
+
+Save your automation.
+
+Now the trigger for our `no` automation:
+
+![image](https://user-images.githubusercontent.com/81011038/190643121-4facff6e-44b0-49b2-9e4c-a8b85420d685.png)
+
+And the action:
+
+![image](https://user-images.githubusercontent.com/81011038/190643282-407637b6-2362-4745-b6e5-2c8641bd914b.png)
+
+Save your automation.
+
+### Testing
+
+Restart HA (or reload scripts & automations). When you run the test script, a notification like this should popup:
+
+![image](https://user-images.githubusercontent.com/81011038/190643738-724dac45-4d03-4a19-a0e6-3a59b5de0aad.png)
+
+Click `YES`, and another popup should show:
+
+![image](https://user-images.githubusercontent.com/81011038/190643932-747b90ad-cec9-4ef0-828f-b4a324b99bf9.png)
