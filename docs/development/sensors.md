@@ -23,7 +23,7 @@ Another possibility is a **MultiValue** sensors (ie. they return 2:n values), fo
 Sensors have the following functions:
 
 * Constructor: initialize the sensor which its name, entity type, id (keep default) and configuration
-* `GetAutoDiscoveryConfig()`: returns it's discovery model to send to Home Assistant
+* `GetAutoDiscoveryConfig()`: returns its discovery model to send to Home Assistant
 * `GetState()`: returns its current state
 * `UpdateSensorValues()`: updates the values of a multivalue sensor's sensors
 
