@@ -17,7 +17,7 @@ Which in turn have derived commands in their respective subfolders.
 Commands have the following functions:
 
 * Constructor: initialize the command which its name, entity type, id (keep default) and configuration
-* `GetAutoDiscoveryConfig()`: returns it's discovery model to send to Home Assistant
+* `GetAutoDiscoveryConfig()`: returns its discovery model to send to Home Assistant
 * `TurnOn()`: execute the command
 * `TurnOnWithAction()`: only if the command supports [actions](https://hassagent.readthedocs.io/en/latest/commands/actions-usage-and-examples/), executes the command with the user provided action
 * `GetState()`: returns its current state (on/off)
