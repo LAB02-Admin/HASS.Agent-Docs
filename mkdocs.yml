@@ -20,6 +20,7 @@ nav:
       - WMI Examples: 'wmi-examples.md'
       - 'examples/activewindowsensor-multiple-processes.md'
       - 'examples/adjust-screen-brightness.md'
+      - 'examples/pc-card.md'
     - 'translating.md'
     - 'Commands':
       - 'commands/command-basics.md'
