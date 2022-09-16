@@ -42,7 +42,7 @@ Uptime sensor:
 
 **Mouhwahno** uses a PowershellSensor to get the uptime.
  
- ```powershell
+ ```ps
  ((Get-Date) - (Get-CimInstance Win32_OperatingSystem).LastBootUpTime).ToString('dd\.hh\:mm\:ss')
  ```
 
