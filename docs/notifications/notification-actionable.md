@@ -13,7 +13,7 @@ It basically works as follows:
 * You send a notification, combined with a few actions
 * Each of those actions have a unique name, eg. `yes` or `no`
 * It's even better to give them more descriptive names, eg. `turn_garden_light_on` or `activate_alarm`
-* Don't worry: that's not what you see in the notification, you can set anything you want there
+* Don't worry: that's not what you see in the notification, you can set any title you want
 * When the notification shows, it'll have buttons containing the actions
 * As soon as you click one of the buttons, the action name will get triggered
 * Every automation that has that trigger will activate
