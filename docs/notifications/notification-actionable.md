@@ -59,7 +59,7 @@ First the trigger for our `yes` automation:
 
 ![image](https://user-images.githubusercontent.com/81011038/190642484-57fd2826-1d85-41b2-847b-4107403a1d32.png)
 
-The `device_name` value helps us bind it to a specific device.
+The `device_name` value helps us bind it to a specific device. Make sure you enter `hass_agent_notifications` as the `Event type`.
 
 Then the action, it just sends another notification:
 
@@ -83,6 +83,8 @@ Restart HA (or reload scripts & automations). When you run the test script, a no
 
 ![image](https://user-images.githubusercontent.com/81011038/190643738-724dac45-4d03-4a19-a0e6-3a59b5de0aad.png)
 
-Click `YES`, and another popup should show:
+Click `Yes`, and another popup should show:
 
 ![image](https://user-images.githubusercontent.com/81011038/190643932-747b90ad-cec9-4ef0-828f-b4a324b99bf9.png)
+
+Done, you've now got actionable notifications! Remember that you should better descriptive names for your actions, but you can always set the `title` value of the action to anything you want, even a simple `yes` or `no`.
