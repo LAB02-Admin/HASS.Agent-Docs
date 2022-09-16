@@ -184,9 +184,3 @@ cards:
             camera_image: camera.pc_blanc
             theme: Mushroom
 ```
-
-To keep the brightness level in the auxiliary element number, and for the values to be equal, then you need to use this code:
-
-```
-{{ state_attr("light.pc_livingroom_monitor_brightness", "brightness")|multiply(0.392)|round(0) }}
-```
