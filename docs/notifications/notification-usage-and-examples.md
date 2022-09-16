@@ -82,6 +82,31 @@ notification_test:
 
 Optionally change `hass.local` to the mDNS/IP of your Home Assistant instance, and change `garden` to the name of your camera - or use another variable.
 
+### Multiple Receivers
+
+You can configure multiple HASS.Agent receivers:
+
+```yaml
+notify:
+  - name: device_one
+    platform: hass_agent_notifier
+    resource: http://{device_ip}:5115/notify
+  - name: device_two
+    platform: hass_agent_notifier
+    resource: http://{device_ip}:5115/notify
+```
+
+And optionally combine them as a group:
+
+```yaml
+notify:
+  name: hassagent_group
+  platform: group
+  services:
+    - service: device_one
+    - service: device_two
+```
+
 ### Script GUI examples
 
 This is the sequence part of a test script to send a text-only message, created through the Home Assistant GUI:
