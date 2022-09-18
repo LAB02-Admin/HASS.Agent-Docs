@@ -1,6 +1,6 @@
 # Actionable Notifications
 
-**Important: this feature requires HASS.Agent 2022.13.0-beta3 and the beta notification integration. Read the release logs for more info**
+**Important: this feature requires HASS.Agent [2022.13.0-beta3](https://github.com/LAB02-Research/HASS.Agent/releases/tag/2022.13.0-beta3) and the beta notification integration. Read the release logs for more info.**
 
 Thanks [@fillefilip8](https://github.com/fillefilip8) for implementing this!
 
