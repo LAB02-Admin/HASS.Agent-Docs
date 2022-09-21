@@ -61,11 +61,21 @@ Some extra info:
 
 * Besides TTS, you can play any .mp3 file on HASS.Agent directly
   * This file can be online (http) or local
+  * The `media_content_type` must be `music`
   * Currently running audio will be aborted when a new file is received
-  * There are no controls, so you can't pause or stop (other than perhaps play an empty file)
-* You can't control the volume, but you can use Windows' Volume Mixer:
 
-![image](https://user-images.githubusercontent.com/81011038/165731564-d870fe88-1836-4d58-ab79-22d94c401486.png)
+YAML to play a .mp3 file on the agent:
+```yaml
+service: media_player.play_media
+data:
+  # Hosted on Home Assistant (/config/www folder)
+  media_content_id: media-source://media_source/local/Alarm1.mp3
+  # Or streamed from another server
+  # media_content_id: https://download.samplelib.com/mp3/sample-3s.mp3
+  media_content_type: music
+target:
+  entity_id: media_player.hass_agent_test_mediaplayer
+```
 
 If you're not getting your current-song information from Spotify, make sure this setting is enabled:
 
