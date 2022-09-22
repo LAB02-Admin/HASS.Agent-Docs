@@ -4,6 +4,27 @@ Below is a list of examples, provided by the community.
 
 ---
 
+
+#### Template sensor: Storage Capacity
+
+Starting with 2022.13.0-beta2, multivalue sensors are using attributes. That means that a lot of values aren't reachable as regular sensors anymore. You can use `state_attr` to fetch the value, or even to create another sensor with just that specific value.
+
+Here's an example to get the AvailableSpaceMB attribute from a Storage multivalue sensor:
+
+```yaml
+template:
+  sensor:
+  - storage_capacity_c:
+      friendly_name: "Storage Capacity Drive C"
+      unit_of_measurement: "MB"
+      value_template: "{{ state_attr('sensor.hass_agent_storage_c', 'AvailableSpaceMB') | float(0) }}"
+```
+
+Make sure to change `sensor.hass_agent_storage_c` to the drive's sensor, and optionally `AvailableSpaceMB` to the attribute you want to use. The `| float(0)` part converts it to a number-based value, you can drop that if you want it as a text value.
+
+Reboot HA, and it'll show up as `sensor.storage_capacity_c`.
+
+
 #### Template trigger: LastActive
 
 ```yaml
