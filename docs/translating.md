@@ -58,7 +58,8 @@ Thank you for your time and effort!
 
 These are the current translation heroes:
 
-![image](https://user-images.githubusercontent.com/81011038/173180922-ce1b4272-8343-403e-b19c-441e6bc3f03c.png)
+
+![image](https://user-images.githubusercontent.com/81011038/196885022-6d9ea3f5-a53e-4110-824c-faad351397ff.png)
 
 
 ---
