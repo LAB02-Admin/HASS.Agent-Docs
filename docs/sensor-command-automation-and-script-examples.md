@@ -48,8 +48,10 @@ Alternative version (binary template sensor so you can use the true/false anywhe
 template:
   - binary_sensor:
       - name: "User Active"
-        state: "{{ (now() - as_datetime(states('sensor.staging_lastactive'))).total_seconds() < 60 }}"
+        state: "{{ as_timestamp(now(),0) - as_timestamp(states('sensor.staging_lastactive'),0) < 60 }}"
 ```
+
+This will also not error when the sensor's unavailable (thanks [dbrunt](https://community.home-assistant.io/t/how-to-handle-unknown-or-unavailable-states-in-template-entities-or-automations/411632/14)!).
 
 #### Condition: TTS only when microphone's not active
 
