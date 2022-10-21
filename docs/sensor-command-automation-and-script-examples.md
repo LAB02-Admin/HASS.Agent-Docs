@@ -42,6 +42,15 @@ Alternative version:
   value_template: "{{ now() - states('sensor.testvm_lastactive')|as_datetime < timedelta(minutes=1) }}"
 ```
 
+Alternative version (binary template sensor so you can use the true/false anywhere):
+
+```yaml
+template:
+  - binary_sensor:
+      - name: "User Active"
+        state: "{{ (now() - as_datetime(states('sensor.staging_lastactive'))).total_seconds() < 60 }}"
+```
+
 #### Condition: TTS only when microphone's not active
 
 ```yaml
