@@ -6,19 +6,17 @@ Note: this only applies to release 2022.12.0-beta1 and up!
 
 ### Home Assistant Configuration
 
-The [HASS.Agent-MediaPlayer integration](https://github.com/LAB02-Research/HASS.Agent-MediaPlayer) exposes itself as a <a href="https://www.home-assistant.io/integrations/media_player/" target="_blank">media_player integration</a>, and has to be configured as such:
+Make sure MQTT is configured (or, alternatively, the local API) and install the [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration). Your HASS.Agent will get discovered and show in the integrations page:
 
-```yaml
-media_player: 
-  name: "hass agent test mediaplayer"
-  platform: hass_agent_mediaplayer
-  host: 10.0.0.5
-  port: 5115 [optional]
-```
+![image](https://user-images.githubusercontent.com/81011038/198243976-ea1322ec-74da-4558-b261-58b690b4d563.png)
 
-Replace the `host` value with the IP of the device that has an HASS.Agent instance running. To find your IP, run `ipconfig` in a command prompt on your PC. Look for the value after `IPv4 Address`. Optionally replace `5115` if you've configured a different port, normally you shouldn't have to.
+Just hit `CONFIGURE`, click `SUBMIT`, pick an area (optionally) and you're done!
 
-Restart Home Assistant to load your configuration.
+You'll now have a list of HASS.Agent instances:
+
+![image](https://user-images.githubusercontent.com/81011038/198244279-9a6804bb-c103-4c75-ad72-b6cdb07e8048.png)
+
+Each instance will have a `media_player` and `notifiy` entity.
 
 ### General
 
@@ -36,7 +34,7 @@ For the 'what's playing' functionality, the playing application needs to use Win
 
 If your application supports it, your current playing media will show up in Home Assistant:
 
-![image](https://user-images.githubusercontent.com/81011038/165730694-ceae1f9a-87d5-4d0e-a5ef-c2116bd2439a.png)
+![image](https://user-images.githubusercontent.com/81011038/198244995-e962c2b4-b8a7-488e-b4a4-b7279600326e.png)
 
 ### Text-to-Speech
 
@@ -65,6 +63,7 @@ Some extra info:
   * Currently running audio will be aborted when a new file is received
 
 YAML to play a .mp3 file on the agent:
+
 ```yaml
 service: media_player.play_media
 data:
