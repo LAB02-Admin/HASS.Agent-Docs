@@ -28,10 +28,12 @@ nav:
     - 'Media Player':
       - 'mediaplayer/mediaplayer-usage-and-examples.md'
     - 'Notifications':
-      - 'notifications/notification-usage-and-examples.md'
-      - 'notifications/notification-debugging-client-side.md'
-      - 'notifications/notification-debugging-ha-side.md'
-      - 'notifications/notification-debugging-ssl.md'
+      - 'notifications/notification-actionable.md'
+    - 'Notifications Legacy':
+      - 'notifications/legacy/notification-usage-and-examples.md'
+      - 'notifications/legacy/notification-debugging-client-side.md'
+      - 'notifications/legacy/notification-debugging-ha-side.md'
+      - 'notifications/legacy/notification-debugging-ssl.md'
     - 'Development':
       - 'development/introduction.md'
       - 'development/commands.md'
