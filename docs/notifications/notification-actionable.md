@@ -1,8 +1,6 @@
 # Actionable Notifications
 
-**Important: this feature requires HASS.Agent [2022.13.0-beta3](https://github.com/LAB02-Research/HASS.Agent/releases/tag/2022.13.0-beta3) and the beta notification integration. Read the release logs for more info.**
-
-Thanks [@fillefilip8](https://github.com/fillefilip8) for implementing this!
+**Important: this feature requires at least [HASS.Agent 2022.13.0](https://github.com/LAB02-Research/HASS.Agent/releases/tag/2022.13.0).**
 
 ### Introduction
 
@@ -22,7 +20,7 @@ If that still sounds a bit complex, just follow the examples below and it'll sta
 
 ### Preparation
 
-You need a notifier entity ready, check the [examples](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) for info on how to do that.
+You need a notifier entity ready. If you use the legacy integration, check the [examples](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) for info on how to do that. Otherwise, you should have it autodetected after installing the [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration).
 
 ### Actionable Notification
 
@@ -88,3 +86,7 @@ Click `Yes`, and another popup should show:
 ![image](https://user-images.githubusercontent.com/81011038/190643932-747b90ad-cec9-4ef0-828f-b4a324b99bf9.png)
 
 Done, you've now got actionable notifications!
+
+---
+
+Thanks [@fillefilip8](https://github.com/fillefilip8) for implementing this!
