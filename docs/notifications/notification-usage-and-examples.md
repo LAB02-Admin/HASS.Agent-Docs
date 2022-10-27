@@ -1,5 +1,7 @@
 # Notification Usage and Examples
 
+This page is based on the legacy notifier integration. It is (and will remain) functional, but for future updates, it's advisable to switch to the [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration).
+
 ### Home Assistant Configuration
 
 The [HASS.Agent-Notifier integration](https://github.com/LAB02-Research/HASS.Agent-Notifier) exposes itself as a <a href="https://www.home-assistant.io/integrations/notify/" target="_blank">notifications integration</a>, and can be configured by adding this snippet in your `configuration.yaml` file:
