@@ -4,7 +4,7 @@ HASS.Agent resides in the system tray. Make sure it's always visible and not hid
 
 You can double-click to open the Home screen:
 
-![Main window](https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/hass_agent_main_window.png)
+![image](https://user-images.githubusercontent.com/81011038/198242015-a46a60d6-a555-4049-8c7d-bb67dee21e72.png)
 
 From here, you can easily use & configure the various parts of HASS.Agent:
 
@@ -18,16 +18,14 @@ Manage your quick action buttons. Use the `add new` button to create your first 
 
 #### 3. Satellite Service
 
-From here, you can configure there service's inner workings (MQTT, commands, sensors ..). 
-
-Use the `copy from hass.agent` button on the `MQTT` tab to easily copy your MQTT configuration (the service will use its own client ID). Remember to click `send and activate config` afterwards!
+From here, you can configure there service's inner workings (MQTT, commands, sensors ..). Since 2022.13, the MQTT configuration you set in HASS.Agent will get applied to the service as well (minus the client ID). 
 
 #### 4. Local Sensors
 
 Manage which sensors you want to publish to your Home Assistant instance. There are some ready-to-use sensors available, but you can also use your own WMI query.
 *This requires MQTT to be configured*.
 
-Most sensors are single value, but some are **multi-value sensors**. These sensors are configured as one entity, but will create multiple entities in Home Assistant. For instance, the `storage` multi-value sensor will create label, total size (MB), available space (MB), used space (MB) and file system entities for all present non-removable disks. When adding a new sensor, the columns will tell you their types.
+Most sensors are single value, but some are **multi-value sensors**. These sensors are configured as one entity, but will create multiple entities in Home Assistant. These sensors in turn can have *attributes* configured to provide even more information.
 
 **Note: WMI can be a pain, and also make sure you don't update your queries too often. Keep an eye on your CPU load.**
 
@@ -52,7 +50,6 @@ Example configuration of a shutdown command in Home Assistant, used in combinati
 
 #### 6 Commands - Actions
 
-
 Some commands have support for **actions**. You can use automations to send extra variables along with the command, for instance the exact level to which the volume has to be set, or an URL to open.
 
 There's a page dedicated to these: [Command Actions Usage & Examples](https://hassagent.readthedocs.io/en/latest/commands/actions-usage-and-examples/).
@@ -63,4 +60,5 @@ Using the `Custom Executor` command, you can use any application to extend HASS.
 
 Another powerful tool (tip provided by **SankaGrandi**) is [NirCmd](https://www.nirsoft.net/utils/nircmd.html). Just set `nircmdc.exe` as the `custom executor binary` in Configuration and you're ready:
 
-![image](https://user-images.githubusercontent.com/81011038/164911466-adfd6e5b-8e34-4a6c-99b0-2099e3c914d8.png)
+![image](https://user-images.githubusercontent.com/81011038/198242777-45cc94f9-cff3-47f6-8661-00e51d44e8ef.png)
+
