@@ -1,23 +1,18 @@
 # Notification Usage and Examples
 
-This page is based on the legacy notifier integration. It is (and will remain) functional, but for future updates, it's advisable to switch to the [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration).
-
-----
-
 ### Home Assistant Configuration
 
-The [HASS.Agent-Notifier integration](https://github.com/LAB02-Research/HASS.Agent-Notifier) exposes itself as a <a href="https://www.home-assistant.io/integrations/notify/" target="_blank">notifications integration</a>, and can be configured by adding this snippet in your `configuration.yaml` file:
+By default, the integration uses MQTT to autodetect your devices. With MQTT setup, it'll show up in your `Integrations` page:
 
-```yaml
-notify: 
-  name: "hass agent test device"
-  platform: hass_agent_notifier
-  resource: http://{device_ip}:5115/notify
-```
+![image](https://user-images.githubusercontent.com/81011038/201068314-6f38ce3e-cc9d-46f5-9d45-f4fb2a99ae18.png)
 
-Replace `{device_ip}` with the IP of the device that has an HASS.Agent instance running. To find your IP, run `ipconfig` in a command prompt on your PC. Look for the value after `IPv4 Address`. Optionally replace `5115` if you've configured a different port, normally you shouldn't have to.
+Just hit `configure` and you'll be good to go.
 
-Restart Home Assistant to load your configuration.
+If you don't use MQTT, you can still use HASS.Agent's local API to connect. Click `ADD INTEGRATION` in HA's `Integrations` page and search for `HASS.Agent`. Enter you device's IP and click `SUBMIT`:
+
+![image](https://user-images.githubusercontent.com/81011038/201068870-9e5c8b9b-4ce2-480f-b0f1-c7c51511ca40.png)
+
+Use the legacy integration troubleshooting on the left if something's not working.
 
 ### General
 
@@ -27,6 +22,8 @@ Currently, there are four variables you can set:
  * `title`: the title of your popup [optional]
  * `image`: http(s) url containing the location of an image [optional]
  * `duration`: duration (in seconds) for which the popup will be shown [optional]
+
+You can also configure actionable notifications, refer to the [actionable notifications](https://hassagent.readthedocs.io/en/latest/notifications/new/notification-actionable/) docs for more info.
 
 ### Text notification
 
