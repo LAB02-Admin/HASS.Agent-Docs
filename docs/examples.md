@@ -296,7 +296,7 @@ Thanks @danielbrunt57!
 A small Powershell script to save the screen and write it to the www folder on home assistant, then use the standard Generic Camera to use the image.
 This is the powershell to grab the shot. Then simply schedule a standard automation to update every two minutes.
 
-```PS
+```powershell
 $Path = "\\HOMEASSISTANT\config\www"
 
 # Make sure that the directory to keep screenshots has been created, otherwise create it
@@ -360,3 +360,22 @@ mode: single
 ```
 
 Thanks **Rokanishu**!
+
+#### Sensor: Battery percentage to Bluetooth device
+
+Based on: https://stackoverflow.com/questions/71736070/how-to-get-bluetooth-device-battery-percentage-using-powershell-on-windows
+
+Create a `PowershellSensor`:
+
+```powershell
+(Get-PnpDevice -Class 'Bluetooth' -FriendlyName ''Xbox Wireless Controller' | Get-PnpDeviceProperty -KeyName '{104EA319-6EE2-4701-BD47-8DDBF425BBE5} 2').Data
+```
+
+[Customize](https://www.home-assistant.io/docs/configuration/customizing-devices/#manual-customization) the sensor:
+
+```yaml 
+sensor.desktop_windows_xboxbattery:
+  device_class: battery
+```
+
+Thanks @bkbilly!
