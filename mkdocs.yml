@@ -23,6 +23,7 @@ nav:
       - ActiveWindowSensor - Multiple Processes: 'examples/activewindowsensor-multiple-processes.md'
       - Adjust Screen Brightness: 'examples/adjust-screen-brightness.md'
       - PC Card: 'examples/pc-card.md'
+      - PC State Cards: 'examples/pc-state.md'
     - 'Commands':
       - 'commands/command-basics.md'
       - 'commands/actions-usage-and-examples.md'
