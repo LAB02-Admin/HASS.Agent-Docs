@@ -379,3 +379,15 @@ sensor.desktop_windows_xboxbattery:
 ```
 
 Thanks @bkbilly!
+
+#### Command: Change default audio playback device
+
+Uses nircmd: https://www.nirsoft.net/utils/nircmd.html
+
+Create a `CustomCommand` (button type):
+
+`nircmd setdefaultsounddevice <your device>`
+
+Optionally use `input_select` in HA: https://github.com/LAB02-Research/HASS.Agent/issues/97#issuecomment-1288040508
+
+Thanks @tachibanayui!
