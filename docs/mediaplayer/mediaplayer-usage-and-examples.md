@@ -1,23 +1,5 @@
 # MediaPlayer Usage and Examples
 
-Note: this only applies to release 2022.12.0-beta1 and up!
-
----
-
-### Home Assistant Configuration
-
-Make sure MQTT is configured (or, alternatively, the local API) and install the [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration). Your HASS.Agent will get discovered and show in the integrations page:
-
-![image](https://user-images.githubusercontent.com/81011038/198243976-ea1322ec-74da-4558-b261-58b690b4d563.png)
-
-Just hit `CONFIGURE`, click `SUBMIT`, pick an area (optionally) and you're done!
-
-You'll now have a list of HASS.Agent instances:
-
-![image](https://user-images.githubusercontent.com/81011038/198244279-9a6804bb-c103-4c75-ad72-b6cdb07e8048.png)
-
-Each instance will have a `media_player` and `notifiy` entity.
-
 ### General
 
 You can add the mediaplayer to your dashboard by using a `Media Control Card`, and selecting your entity (for the above example, `media_player.hass_agent_test_mediaplayer`).
