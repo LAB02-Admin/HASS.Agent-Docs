@@ -30,9 +30,9 @@ nav:
     - 'Media Player':
       - 'mediaplayer/mediaplayer-usage-and-examples.md'
     - 'Notifications':
+      - 'notifications/notification-usage-and-examples.md'
       - 'notifications/new/notification-actionable.md'
     - 'Notifications Legacy':
-      - 'notifications/notification-usage-and-examples.md'
       - 'notifications/notification-debugging-client-side.md'
       - 'notifications/notification-debugging-ha-side.md'
       - 'notifications/notification-debugging-ssl.md'
