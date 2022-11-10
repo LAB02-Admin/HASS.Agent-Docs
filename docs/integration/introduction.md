@@ -14,4 +14,4 @@ The ability to send notifications from within HA to any HASS.Agent. This'll then
 
 Control your PC like it's a media_player entity from within HA. See what's playing, skip tracks, even send text-to-speech to your PC.
 
-You'll need to install the integration in HA to unlock these functions. Consult the `Installation` page on the left for info on how to do this.
+You'll need to install the integration in HA to unlock these functions. Consult the [Installation](https://hassagent.readthedocs.io/en/latest/integration/installation/) page for info on how to do this.
