@@ -4,7 +4,7 @@ HASS.Agent's integration isn't integrated in Home Assistant (yet), so you'll nee
 
 #### HACS
 
-The easiest way to do this (and to add tons of other useful integrations) is by installing HACS. It's a central hub through which you can install integrations. They've written a step-by-step guide on how to do this:
+The easiest way to do this (and to add tons of other useful integrations) is by installing [HACS](https://hacs.xyz). It's a central hub through which you can install integrations. They've written a step-by-step guide on how to do this:
 
 [https://hacs.xyz/docs/setup/prerequisites](https://hacs.xyz/docs/setup/prerequisites/)
 
