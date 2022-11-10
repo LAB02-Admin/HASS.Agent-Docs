@@ -64,24 +64,25 @@ Currently, there are four variables you can set:
 
 You can also use Home Assistant's camera proxy. This way you don't have to share the credentials etc. of your camera. Home Assistant will provide a token that's valid for 5 minutes, so it's safe to use.
 
-Example script:
+Example automation that sends an image when the doorbell's pressed (thanks @bharvey88):
 
 ```yaml
-notification_test:
-  alias: Notification Test
-  variables:
-    image: |
-      {%- set image = "http://hass.local:8123" + state_attr("camera.garden","entity_picture") %}
-      {{ image }}
-  sequence:
-  - service: notify.hass_agent_test
+alias: Send image notification on doorbell
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.doorbell
+    to: "on"
+condition: []
+action:
+  - service: notify.hassagent_desktop
     data:
-      title: Test
-      message: "This is a test message with an image."
+      message: Someone is at the door
+      title: Doorbell
       data:
-        image: "{{ image }}"
-  mode: single
-  icon: mdi:bell
+        image: /api/camera_proxy/camera.doorbell
+        duration: 3
+mode: single
 ```
 
 Optionally change `hass.local` to the mDNS/IP of your Home Assistant instance, and change `garden` to the name of your camera - or use another variable.
