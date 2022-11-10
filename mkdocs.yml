@@ -28,6 +28,7 @@ nav:
       - 'commands/command-basics.md'
       - 'commands/actions-usage-and-examples.md'
     - 'Integration':
+      - 'integration/introduction.md'
       - 'integration/installation.md'
       - 'integration/configuration.md'
     - 'Media Player':
