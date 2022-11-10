@@ -28,3 +28,12 @@ Problem: HASS.Agent is compiled as x64 and won't run as-is on the x86 build of W
 Fix: https://github.com/LAB02-Research/HASS.Agent/issues/188#issuecomment-1287777056
 
 Thanks @onexey!
+
+
+#### The integration isn't publishing through MQTT
+
+Problem: even though everything's configured, the integration isn't autodetecting anything through MQTT
+
+Fix: make sure that the MQTT user of both HASS.Agent and HA have access to the integration topic: `hass.agent/#`
+
+Thanks @DavidD!
