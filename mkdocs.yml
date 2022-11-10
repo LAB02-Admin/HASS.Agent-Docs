@@ -14,10 +14,11 @@ nav:
     - 'updating.md'
     - 'usage.md'
     - 'clean-slate.md'
+    - 'troubleshooting.md'
     - 'performance-counter-debugging.md'
     - 'translating.md'
     - 'Examples':
-      - Misc Examples: 'sensor-command-automation-and-script-examples.md'
+      - Misc Examples: 'examples.md'
       - WMI Examples: 'wmi-examples.md'
       - ActiveWindowSensor - Multiple Processes: 'examples/activewindowsensor-multiple-processes.md'
       - Adjust Screen Brightness: 'examples/adjust-screen-brightness.md'
