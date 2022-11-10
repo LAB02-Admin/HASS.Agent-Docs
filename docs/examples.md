@@ -334,4 +334,29 @@ Thanks kind [stranger](https://lab02research.youtrack.cloud/issue/hassagent-85/S
 
 Note: make sure your PS execution policy [allows execution](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2) (to allow remote unsigned, but require remote scripts to be signed, use `Set-ExecutionPolicy RemoteSigned`). Thanks **drjjr**!
 
- 
+#### Automation: Send a notification when Spotify starts playing
+
+```yaml
+alias: HASS.Agent - Spotify is playing audio
+description: ""
+trigger:
+  - platform: template
+    value_template: >-
+      {%- if state_attr('sensor.hass_desktop_audio_audio_sessions',
+      'AudioSessions') | selectattr('Application', 'match', 'Spotify') | list 
+      %}
+      true
+      {%- else %}
+      false
+      {%- endif %}
+condition: []
+action:
+  - service: notify.hass_agent_desktop
+    data:
+      message: Spotify is playing music
+      data:
+        image: none
+mode: single
+```
+
+Thanks **Rokanishu**!
