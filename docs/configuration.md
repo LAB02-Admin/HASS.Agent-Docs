@@ -56,6 +56,10 @@ Requires a patched Windows 10 or Windows 11 to function, *ymmv*. If it appears b
 
 Enter your MQTT broker configuration. This is required if you want to use commands (triggered from Home Assistant) or sensors (sent from your PC). The [new integration](https://github.com/LAB02-Research/HASS.Agent-Integration) also uses MQTT by default, but can use the local API as a fallback.
 
+If you need help setting up MQTT, you can use this tutorial: https://www.youtube.com/watch?v=dqTn-Gk4Qeo.
+
+If you want to monitor what's being send through MQTT, you can use [MQTT Explorer](http://mqtt-explorer.com/).
+
 #### 10. Notifications
 
 Make sure the integration has been installed and configured in Home Assistant.
