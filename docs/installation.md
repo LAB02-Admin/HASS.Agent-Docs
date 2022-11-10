@@ -13,15 +13,7 @@ You have the option to download an installer or a .zip package. The installer is
 
 HASS.Agent can use an entry in your user account's registry to launch on login. It's disabled by default, but you'll be offered to enable this during onboarding, or you can always disable/enable using the Configuration window.
 
-To use notifications and/or the mediaplayer functionality, you'll need to install the [HASS.Agent integration](https://github.com/LAB02-Research/HASS.Agent-Integration). This can be done through [HACS](https://hacs.xyz) or manually. 
-
-By default, the integration works through MQTT, and all you need to do is configure your MQTT broker to get it up and running. 
-
-An alternative is to use HASS.Agent's local API. In that case, you'll also need to open the configured port in the firewall of the receiving PC (default `5115`). You can do that through the configuration window:
-
-![Configuration screen](https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/hass_agent_notifications_portreservation.png)
-
-**Note: you don't have to do that if you use MQTT!**
+To use notifications and/or the mediaplayer functionality, you'll need to install the [HASS.Agent integration](https://github.com/LAB02-Research/HASS.Agent-Integration). Refer to the Integration's installation and configuration pages on the left for more info.
 
 ***
 
