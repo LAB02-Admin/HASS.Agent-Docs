@@ -4,9 +4,7 @@ This page explains the basics behind HASS.Agent: what is it and what can it do. 
 
 Tip: you can use Home Assistant's [glossary](https://www.home-assistant.io/docs/glossary/) to look up words you don't know yet.
 
-Tip: EverythingSmartHome's youtube video is a great guide to get you started: [Control Your Windows PC With Home Assistant!](https://www.youtube.com/watch?v=B4SnJPVbSXc)
-
-> Note: this document may include features that are only available in the latest beta. Check the [release page](https://github.com/LAB02-Research/HASS.Agent/releases) for a list of all releases.
+Tip: EverythingSmartHome's youtube video is a great guide to get you started: [Control Your Windows PC With Home Assistant!](https://www.youtube.com/watch?v=B4SnJPVbSXc). Note that it is based on an older version, so for instance the mentioned missing 'notification actions' are already implemented.
 
 ----
 
@@ -88,15 +86,15 @@ And from that on you can either execute them by their individual hotkey, or pull
 
 Another reason for HASS.Agent's creation was the ability to receive notifications from HA. For instance: someone presses the doorbell, and you get a notification with a picture of the guest on your PC. Because I'm usually listening to music with earpods in while working, this would be a good way to get my attention.
 
-There's a [dedicated notifications page](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) to help you set things up (with debugging manuals in the left menu), and you can also check its [GitHub readme](https://github.com/LAB02-Research/HASS.Agent-Notifier) for more info.
+Use the [integration installation](https://hassagent.readthedocs.io/en/latest/integration/installation/) to help get you started, or the [notifications example page](https://hassagent.readthedocs.io/en/latest/notifications/notification-usage-and-examples/) for inspiration.
 
 ----
 
 ### Media Player
 
-The mediaplayer integration allows you to use your HASS.Agent as a mediaplayer device: see and control what's playing (regardless of what application you're actually using to play media), and send text-to-speech notifications. 
+The mediaplayer allows you to use your HASS.Agent as a mediaplayer device: see and control what's playing (regardless of what application you're actually using to play media), and send text-to-speech notifications. 
 
-There's a [dedicated mediaplayer page](https://hassagent.readthedocs.io/en/latest/mediaplayer/mediaplayer-usage-and-examples/) to help you set things up, and you can also check its [GitHub readme](https://github.com/LAB02-Research/HASS.Agent-MediaPlayer) for more info.
+Use the [integration installation](https://hassagent.readthedocs.io/en/latest/integration/installation/) to help get you started or the [mediaplayer example page](https://hassagent.readthedocs.io/en/latest/mediaplayer/mediaplayer-usage-and-examples/) for inspiration.
 
 ----
 
@@ -130,19 +128,13 @@ To allow for all that, the satellite service was added. This is a Windows servic
 
 You can start tinkering by clicking the `satellite service` button in the main window:
 
-![image](https://user-images.githubusercontent.com/81011038/170235862-77607bba-7915-449b-9f97-c68d49fb2f6e.png)
+![image](https://user-images.githubusercontent.com/81011038/201064924-9de5f2c0-922b-4a0a-b9fc-a6ce3d6eeae9.png)
 
-It's ok to ignore the `General` tab (unless you want to change something, and do take note of the `device name` -> that's how the service shows up in your HA instance). However, you do need to configure MQTT. Click the `MQTT` tab on top to get there. 
-
-To make things easier, just click the `copy from hass.agent` button (it'll change the `client id` value to avoid username collisions) and click `send and activate config`:
-
-![image](https://user-images.githubusercontent.com/81011038/170237522-92895ff5-5c79-4785-9394-7c674db8479a.png)
-
-> Tip: if the status remains `disconnected`, restart the service (go to `Configuration` in the main window, then tab `Satellite Service` and click `stop service` and `start service` respectively) and check again.
-
-Afterwards, you can use the `Commands` and `Sensors` tabs on top to start adding your entities. HASS.Agent will warn you when a certain command or sensor can't be run via the satellite service. 
+The satellite service copies HASS.Agent's MQTT settings, except the `client id` (which is required to be unique). If you want to set another user, you can do so on the `MQTT` tab. Otherwise, jump straight into adding commands and sensors! HASS.Agent will warn you when a certain command or sensor can't be run via the satellite service. 
 
 **Remember to click the `send and activate` button after adding or modifying your entities!**
+
+> Tip: if the MQTT status remains `disconnected`, restart the service (go to `Configuration` in the main window, then tab `Satellite Service` and click `stop service` and `start service` respectively) and check again.
 
 > Note: you can't do anything that would require an UI in the satellite service - for instance, you can't open a browser. It wouldn't show.
 
