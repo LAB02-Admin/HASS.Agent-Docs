@@ -1,5 +1,9 @@
 # MediaPlayer Usage and Examples
 
+### Installation
+
+Refer to the integration's installation and configuration pages on the left.
+
 ### General
 
 You can add the mediaplayer to your dashboard by using a `Media Control Card`, and selecting your entity (for the above example, `media_player.hass_agent_test_mediaplayer`).
