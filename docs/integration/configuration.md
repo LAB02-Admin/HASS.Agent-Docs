@@ -12,7 +12,11 @@ You'll now have one (or a list of) HASS.Agent instance(s):
 
 ![image](https://user-images.githubusercontent.com/81011038/201071780-b4f31075-71a9-4f93-b3d1-b0423514aeec.png)
 
-Each instance will have a `media_player` and `notifiy` entity, depending on what you've configured in HASS.Agent.
+Each instance will have a `media_player` entity and `notifiy` service, depending on what you've configured in HASS.Agent.
+
+> Note: `notify` is a service, so it won't show up in the device's page like the `media_player` entity - you can test it through `Developer Tools` -> `SERVICES`.
+
+> Note: the integration's device is not the same as HASS.Agent's device, so it'll be empty apart from the `media_player`.
 
 #### Legacy
 
