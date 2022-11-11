@@ -4,7 +4,7 @@ This page explains the basics behind HASS.Agent: what is it and what can it do. 
 
 Tip: you can use Home Assistant's [glossary](https://www.home-assistant.io/docs/glossary/) to look up words you don't know yet.
 
-Tip: EverythingSmartHome's youtube video is a great guide to get you started: [Control Your Windows PC With Home Assistant!](https://www.youtube.com/watch?v=B4SnJPVbSXc). Note that it is based on an older version, so for instance the mentioned missing 'notification actions' are already implemented.
+Tip: EverythingSmartHome's youtube video is a great guide to get you started: [Control Your Windows PC With Home Assistant!](https://www.youtube.com/watch?v=B4SnJPVbSXc). Note that it is based on an older version, so for instance the mentioned missing 'actionable notifications' are already implemented.
 
 ----
 
