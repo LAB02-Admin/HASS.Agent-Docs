@@ -27,6 +27,7 @@ nav:
     - 'Commands':
       - 'commands/command-basics.md'
       - 'commands/actions-usage-and-examples.md'
+      - 'commands/elevated-custom-command.md'
     - 'Integration':
       - 'integration/introduction.md'
       - 'integration/installation.md'
