@@ -26,7 +26,7 @@ The `Trigger` tab allows you to configure moments or events on when to run this 
 
 > Tip: it's always best to provide the `Start in` path as well.
 
-WHen you enter it like this, your scheduled task will remaing in `Running` state until you close the application. You'll be able to start it once. If you just want to start your application, and then stop the scheduled task, you can use `cmd` as the program, and `/C "C:\Windows\notepad.exe"` as the arguments. Just replace `C:\Windows.notepad` with your app, leave the `/C `:
+When you enter it like this, your scheduled task will remaing in `Running` state until you close the application. You'll be able to start it once. If you just want to start your application, and then stop the scheduled task, you can use `cmd` as the program, and `/C "C:\Windows\notepad.exe"` as the arguments. Just replace `C:\Windows.notepad` with your app, leave the `/C `:
 
 ![image](https://user-images.githubusercontent.com/81011038/201528036-55a8f7b2-1b9a-4f55-a6e6-39f56f32fb7c.png)
 
