@@ -42,6 +42,8 @@ Tip (thanks Nejc), you can use `Automatic Translation`:
 
 Then work down the list correcting the entries.
 
+> Note: these translations aren't very good to use as-is, since they're not context aware. It's just a starting point, you'll still have to go through them. Only use this if you prefer changing to writing.
+
 ---
 
 When you're done, please let us know you worked on the translations by sending a notification:
@@ -59,7 +61,7 @@ Thank you for your time and effort!
 These are the current translation heroes:
 
 
-![image](https://user-images.githubusercontent.com/81011038/196885022-6d9ea3f5-a53e-4110-824c-faad351397ff.png)
+![image](https://user-images.githubusercontent.com/81011038/201659454-6c306c28-6f6e-4bfe-8de1-bf3dda721da6.png)
 
 
 ---
