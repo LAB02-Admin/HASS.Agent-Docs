@@ -16,7 +16,7 @@ The application-specific permission settings do not grant Local Activation permi
 {15C20B67-12E7-4BB6-92BB-7AFF07997402}
 ```
 
-Fix: https://www.kapilarya.com/fix-event-10016-error-the-application-specific-permission-settings-do-not-grant-local-activation-permission-in-windows-10
+Fix: [https://www.kapilarya.com/fix-event-10016-error-the-application-specific-permission-settings-do-not-grant-local-activation-permission-in-windows-10](https://www.kapilarya.com/fix-event-10016-error-the-application-specific-permission-settings-do-not-grant-local-activation-permission-in-windows-10)
 
 Thanks @hastarin!
 
@@ -25,7 +25,7 @@ Thanks @hastarin!
 
 Problem: HASS.Agent is compiled as x64 and won't run as-is on the x86 build of Windows.
 
-Fix: https://github.com/LAB02-Research/HASS.Agent/issues/188#issuecomment-1287777056
+Fix: [https://github.com/LAB02-Research/HASS.Agent/issues/188#issuecomment-1287777056](https://github.com/LAB02-Research/HASS.Agent/issues/188#issuecomment-1287777056)
 
 Thanks @onexey!
 
