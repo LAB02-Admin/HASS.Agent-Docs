@@ -4,26 +4,6 @@ This page contains references to HASS.Agent problems and solutions that can't ea
 
 ---
 
-#### Debugging integration(s)
-
-If an integration isn't working as it should, you can opt to enable debug logging in Home Assistant. This will show you logs for every step the integration's taking, so you (or the dev) can better determine what's going wrong.
-
-Go to your file-editor-of-choice in HA, and open `configuration.yaml`. Add the following snippet:
-
-```yaml
-logger:
-  default: warning
-  logs:
-    custom_components.hass_agent: debug
-```
-
-This is for the new integration. If you use either of the old ones, you can add these rows:
-
-```yaml
-    custom_components.hass_agent_notifier: debug
-```
-
-
 #### The application-specific permission settings do not grant Local Activation permission for the COM Server application
 
 Problem: HASS.Agent crashes, showing the following log entry:
