@@ -33,6 +33,7 @@ nav:
       - 'integration/introduction.md'
       - 'integration/installation.md'
       - 'integration/configuration.md'
+      - 'integration/debugging.md'
     - 'Media Player':
       - 'mediaplayer/mediaplayer-usage-and-examples.md'
     - 'Notifications':
