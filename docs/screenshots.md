@@ -44,3 +44,21 @@ What's the point of docs if there aren't any screenshots, right?
 
 ![image](https://user-images.githubusercontent.com/81011038/201679888-f1ef3948-b2c0-4f55-a012-e3d3af96f572.png)
 
+#### Notifications
+
+![image](https://user-images.githubusercontent.com/81011038/199956334-642def7d-4cb4-46f3-a73b-25c76e5bd02c.png)
+
+![Text-based toast notification](https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/hass_agent_toast_text.png)
+
+#### WebView
+
+![WebView](https://user-images.githubusercontent.com/81011038/174068053-971adb8b-f552-43bc-a39b-6c6c4a3bda9c.png)
+
+#### Integration
+
+![image](https://user-images.githubusercontent.com/81011038/198246059-caa7f1cd-89f7-41f9-989e-724a1a67c2fe.png)
+
+#### Media Player
+
+![image](https://user-images.githubusercontent.com/81011038/198246217-cce288be-bbb7-4c5f-baff-510cc99c30b1.png)
+
