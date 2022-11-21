@@ -89,7 +89,7 @@ You may need to enable a rule in Windows Firewall to allow ICMP (ping) packets. 
 
 To manually add a rule, consult these docs (thanks @ArekkusuDesu!):
 
-https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule
+[https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule)
 
 
 #### Sensor: GeoLocation
@@ -363,7 +363,7 @@ Thanks **Rokanishu**!
 
 #### Sensor: Battery percentage to Bluetooth device
 
-Based on: https://stackoverflow.com/questions/71736070/how-to-get-bluetooth-device-battery-percentage-using-powershell-on-windows
+Based on: [https://stackoverflow.com/questions/71736070/how-to-get-bluetooth-device-battery-percentage-using-powershell-on-windows](https://stackoverflow.com/questions/71736070/how-to-get-bluetooth-device-battery-percentage-using-powershell-on-windows)
 
 Create a `PowershellSensor`:
 
@@ -382,12 +382,12 @@ Thanks @bkbilly!
 
 #### Command: Change default audio playback device
 
-Uses nircmd: https://www.nirsoft.net/utils/nircmd.html
+Uses nircmd: [https://www.nirsoft.net/utils/nircmd.html](https://www.nirsoft.net/utils/nircmd.html)
 
 Create a `CustomCommand` (button type):
 
 `nircmd setdefaultsounddevice <your device>`
 
-Optionally use `input_select` in HA: https://github.com/LAB02-Research/HASS.Agent/issues/97#issuecomment-1288040508
+Optionally use `input_select` in HA: [https://github.com/LAB02-Research/HASS.Agent/issues/97#issuecomment-1288040508](https://github.com/LAB02-Research/HASS.Agent/issues/97#issuecomment-1288040508)
 
 Thanks @tachibanayui!
