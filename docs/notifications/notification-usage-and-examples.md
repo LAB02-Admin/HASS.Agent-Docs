@@ -76,19 +76,7 @@ Optionally change `hass.local` to the mDNS/IP of your Home Assistant instance, a
 
 ### Multiple Receivers
 
-You can configure multiple HASS.Agent receivers:
-
-```yaml
-notify:
-  - name: device_one
-    platform: hass_agent_notifier
-    resource: http://{device_ip}:5115/notify
-  - name: device_two
-    platform: hass_agent_notifier
-    resource: http://{device_ip}:5115/notify
-```
-
-And optionally combine them as a group:
+You can combine multiple notifiers in a notify group:
 
 ```yaml
 notify:
