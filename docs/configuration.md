@@ -48,7 +48,7 @@ Remember to turn extended logging off afterwards, as it'll clog your disk!
 
 #### 8. Media Player
 
-Make sure the integration has been installed and configured in Home Assistant. 
+Make sure the [integration](https://hassagent.readthedocs.io/en/latest/integration/installation/) has been installed and configured in Home Assistant. 
 
 Requires a patched Windows 10 or Windows 11 to function, *ymmv*. If it appears broken, checks the logs for more info.
 
@@ -62,7 +62,7 @@ If you want to monitor what's being send through MQTT, you can use [MQTT Explore
 
 #### 10. Notifications
 
-Make sure the integration has been installed and configured in Home Assistant.
+Make sure the [integration](https://hassagent.readthedocs.io/en/latest/integration/installation/) has been installed and configured in Home Assistant.
 
 Sometimes Windows won't allow you to enable notifications for HASS.Agent. This can happen if HASS.Agent hasn't shown a notification yet. To make sure it technically works, click the `show test notification` button in this tab. You'll be presented with a locally generated notification (or not, of course).
 
