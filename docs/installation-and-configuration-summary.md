@@ -2,7 +2,7 @@
 
 Checklist to start using HASS.Agent:
 
-- Install and configure the [HASS.Agent integration](https://github.com/LAB02-Research/HASS.Agent-Integration) if you want notifications and/or mediaplayer capabilities
+- Install and configure the [HASS.Agent integration](https://hassagent.readthedocs.io/en/latest/integration/installation/) if you want notifications and/or mediaplayer capabilities
 - Download & run the [latest release's installer](https://github.com/LAB02-Research/HASS.Agent/releases/latest)
 - HASS.Agent will launch and show you the onboarding process
 - Configure the parts you'll be using
