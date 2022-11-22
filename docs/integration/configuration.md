@@ -16,7 +16,7 @@ Each instance will have a `media_player` entity and `notifiy` service, depending
 
 > Note: `notify` is a service, so it won't show up in the device's page like the `media_player` entity - you can test it through `Developer Tools` -> `SERVICES`.
 
-> Note: the integration's device is not the same as HASS.Agent's device, so it'll be empty apart from the `media_player`.
+> Note: the integration's device is not the same as HASS.Agent's device, so it'll be empty except the `media_player` entity.
 
 #### Legacy
 
