@@ -10,9 +10,13 @@ The easiest way to do this (and to add tons of other useful integrations) is by 
 
 You can also ask for help in the HA forums if you're stuck.
 
+After you've installed HACS (and rebooted HA), you can use this link to jump to the integration (thanks [@c00ldude1oo](https://github.com/c00ldude1oo)):
+
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=LAB02-Research&repository=HASS.Agent-Integration)
 
-When you've installed HACS (and restarted HA), just open it by clicking on it on the toolbar on the leftside of HA. Then click `Integrations` -> `EXPLORE & DOWNLOAD REPOSITORIES` (bottom right) and search for `HASS.Agent`.
+Or navigate manually:
+
+Open HACS by clicking on its icon on the toolbar on the leftside of HA. Then click `Integrations` -> `EXPLORE & DOWNLOAD REPOSITORIES` (bottom right) and search for `HASS.Agent`.
 
 > Note: you ONLY need the `HASS.Agent` integration. The `notification` and `media_player` integrations are legacy, you can ignore them.
 
