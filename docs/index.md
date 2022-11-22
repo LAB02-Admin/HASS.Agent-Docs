@@ -19,7 +19,11 @@ Starting from zero, and want to learn what HASS.Agent's about and how to start? 
 
 ----
 
-Have anything to add? Feel free to create pull requests for the [documentation repo](https://github.com/LAB02-Admin/HASS.Agent-Docs), or just send a mail to lab02research@outlook.com. Thanks!
+Have anything to add? Feel free to create pull requests for the [documentation repo](https://github.com/LAB02-Admin/HASS.Agent-Docs), or just send a mail:
+
+![image](https://user-images.githubusercontent.com/81011038/203284031-5c07e7e9-83b8-4b55-9c3f-f9659a117789.png)
+
+Thanks!
 
 ----
 
