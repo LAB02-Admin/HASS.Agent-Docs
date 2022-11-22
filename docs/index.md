@@ -3,7 +3,7 @@
 <a href="https://github.com/LAB02-Research/HASS.Agent/">
     <img src="https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/logo_128.png" alt="HASS.Agent logo" title="HASS.Agent" align="right" height="128" /></a>
 
-HASS.Agent is a Windows-based client for [Home Assistant](https://www.home-assistant.io), developed in .NET 6. It provides notifications, quick actions, commands, sensors and more.
+HASS.Agent is a Windows-based client (*companion app*) for [Home Assistant](https://www.home-assistant.io), developed in .NET 6. It provides notifications, quick actions, commands, sensors and more.
 
 Click [here](https://github.com/LAB02-Research/HASS.Agent/releases/latest/download/HASS.Agent.Installer.exe) to download the latest installer.
 
