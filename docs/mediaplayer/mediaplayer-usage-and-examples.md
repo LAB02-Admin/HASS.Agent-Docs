@@ -44,7 +44,7 @@ Replace `google_translate_say` if you're using any other TTS service.
 Some extra info:
 
 * Besides TTS, you can play any .mp3 file on HASS.Agent directly
-  * This file can be online (http) or local
+  * This file can be online (`http(s)`) or local (`C:\path\to\file.mp3`)
   * The `media_content_type` must be `music`
   * Currently running audio will be aborted when a new file is received
 
