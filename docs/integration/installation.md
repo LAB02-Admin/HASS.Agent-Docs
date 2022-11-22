@@ -4,11 +4,13 @@ HASS.Agent's integration isn't integrated in Home Assistant (yet), so you'll nee
 
 #### HACS
 
-The easiest way to do this (and to add tons of other useful integrations) is by installing [HACS](https://hacs.xyz). It's a central hub through which you can install integrations. They've written a step-by-step guide on how to do this:
+The easiest way to do this (and to add tons of other useful integrations) is by installing [HACS](https://hacs.xyz). It's a central hub through which you can install integrations, themes, custom cards and scripts. They've written a step-by-step guide on how to do this:
 
 [https://hacs.xyz/docs/setup/prerequisites](https://hacs.xyz/docs/setup/prerequisites/)
 
-You can also ask for help in the HA forums if you're stuck.
+Or you can use one of the youtube guides, like this one: [How to install HACS in 2022 in Home Assistant](https://www.youtube.com/watch?v=D6ZlhE-Iv9E)
+
+You can also ask for help in the [HA forums](https://community.home-assistant.io) if you're stuck.
 
 After you've installed HACS (and rebooted HA), you can use this link to jump to the integration (thanks [@c00ldude1oo](https://github.com/c00ldude1oo)):
 
