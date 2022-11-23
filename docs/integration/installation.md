@@ -4,7 +4,7 @@ HASS.Agent's integration isn't integrated in Home Assistant (yet), so you'll nee
 
 #### HACS
 
-The easiest way to do this (and to add tons of other useful integrations) is by installing [HACS](https://hacs.xyz). It's a central hub through which you can install integrations, themes, custom cards and scripts. They've written a step-by-step guide on how to do this:
+The easiest way to do this is by installing [HACS](https://hacs.xyz) (*Home Assistant Community Store*). It's a central hub through which you can install tons of useful integrations, themes, custom cards and scripts. They've written a step-by-step guide on how to do this:
 
 [https://hacs.xyz/docs/setup/prerequisites](https://hacs.xyz/docs/setup/prerequisites/)
 
@@ -16,13 +16,11 @@ After you've installed HACS (and rebooted HA), you can use this link to jump to 
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=LAB02-Research&repository=HASS.Agent-Integration)
 
-Or navigate manually:
-
-Open HACS by clicking on its icon on the toolbar on the leftside of HA. Then click `Integrations` -> `EXPLORE & DOWNLOAD REPOSITORIES` (bottom right) and search for `HASS.Agent`.
+Or if you want to navigate yourself: open HACS by clicking on its icon on the toolbar on the leftside of HA. Then click `Integrations` -> `EXPLORE & DOWNLOAD REPOSITORIES` (bottom right) and search for `HASS.Agent`.
 
 > Note: you ONLY need the `HASS.Agent` integration. The `notification` and `media_player` integrations are legacy, you can ignore them.
 
-#### Manually
+#### Manual
 
 Another option is to manually install the integration. The downside of this is that you'll also need to manually update every time. 
 
