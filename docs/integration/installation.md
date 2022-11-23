@@ -1,6 +1,6 @@
 # Installation
 
-HASS.Agent's integration isn't integrated in Home Assistant (yet), so you'll need to install it before you can use it. 
+HASS.Agent's integration isn't part of Home Assistant's core (yet), so you'll need to install it before you can use it. 
 
 #### HACS
 
