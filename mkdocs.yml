@@ -39,6 +39,7 @@ nav:
     - 'Notifications':
       - 'notifications/notification-usage-and-examples.md'
       - 'notifications/new/notification-actionable.md'
+      - 'notifications/new/notification-debugging.md'
     - 'Notifications Legacy':
       - 'notifications/notification-debugging-client-side.md'
       - 'notifications/notification-debugging-ha-side.md'
