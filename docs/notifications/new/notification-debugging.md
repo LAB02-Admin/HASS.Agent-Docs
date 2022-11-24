@@ -66,5 +66,5 @@ When everything's working, feel free to disable telemetry once again.
 
 The following links may (or may not) help in further debugging:
 
-https://www.surfacetablethelp.com/2017/02/fix-show-app-notifications-option-greyed-out-in-windows-10-settings.html
-https://www.guidingtech.com/top-ways-to-fix-notifications-not-working-on-windows-11/
+[https://www.surfacetablethelp.com/2017/02/fix-show-app-notifications-option-greyed-out-in-windows-10-settings.html](https://www.surfacetablethelp.com/2017/02/fix-show-app-notifications-option-greyed-out-in-windows-10-settings.html)
+[https://www.guidingtech.com/top-ways-to-fix-notifications-not-working-on-windows-11/](https://www.guidingtech.com/top-ways-to-fix-notifications-not-working-on-windows-11/)
