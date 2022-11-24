@@ -48,4 +48,5 @@ nav:
       - 'development/introduction.md'
       - 'development/commands.md'
       - 'development/sensors.md'
-    - End: index.md
+    - 'End': 
+      - Home: 'index.md'
