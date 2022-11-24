@@ -26,7 +26,7 @@ Throughout this page, we'll be working with an example command: the `Lock` comma
 
 First, open HASS.Agent's main window, and click the `commands` button:
 
-![image](https://user-images.githubusercontent.com/81011038/167809618-5c160b82-67f6-433a-82a3-4374b7c78292.png)
+![image](https://user-images.githubusercontent.com/81011038/203743209-34d5dd0b-af41-416e-b8c2-1a4b18554700.png)
 
 > Note: Don't be alarmed if the **system status** for `commands` says `stopped`: that's just because you probably don't have any commands configured yet.
 
