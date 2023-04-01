@@ -15,6 +15,10 @@ Visit the [LAB02 Research Site](https://lab02-research.org/) for release info, d
 
 ----
 
+C# or Python developer? Please read this: [lab02-research.org/2023-04-01-help-wanted](https://lab02-research.org/2023-04-01-help-wanted/)
+
+----
+
 Starting from zero, and want to learn what HASS.Agent's about and how to start? Be sure to check the [introduction article](https://hassagent.readthedocs.io/en/latest/introduction/), and optionally the [command basics](https://hassagent.readthedocs.io/en/latest/commands/command-basics/).
 
 ----
